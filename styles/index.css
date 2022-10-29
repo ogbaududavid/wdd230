@@ -1,0 +1,58 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(44, 44, 154);
+    color:white;
+    align-items: center;
+    text-shadow: 0 0 20px;
+    box-shadow: 0 0 20px blue; 
+}
+img{
+    width: 80%;
+    box-shadow: 0 0 20px;
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+h2{
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px;
+    font-family: 'Tiro Telugu', serif;
+
+}
+header h1{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+footer{
+    background-color: rgb(44, 44, 154);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 20px blue
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+}
+footer p{
+    font-size: 15px;
+}
+a{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+

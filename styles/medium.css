@@ -1,0 +1,22 @@
+@media only screen and (min-width: 32.5em){
+    body header{
+        background-color: green;
+        box-shadow:0 0 20px black;
+    }
+    body footer{
+        background-color: green;
+        box-shadow: 0 0 20px black;
+    }
+    header h2{
+        font-size: 3rem;
+        color: white;
+    }
+    body h2{
+        font-size: 2rem;
+    }
+    header img{
+        width: 80%;
+        box-shadow: 0 0 20px black;
+        margin: 10px;
+    }
+}

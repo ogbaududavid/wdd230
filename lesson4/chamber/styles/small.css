@@ -1,0 +1,136 @@
+body{
+    margin: 20px;
+}
+header{
+    background-color: #ECECEC;
+}
+.logo{
+    background-color: #ECECEC;
+    font-family: 'Yeseva One', cursive;
+    align-items: center;
+    color: #096DB9;
+    padding: 10px;
+    display: flex;
+}
+.logo img{
+    width: 50px;
+}
+.logo h1{
+    font-size: 1rem;
+    flex: 1 1 100%;
+    text-align: center;
+}
+.show-date{
+    color: white;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    border-bottom: 1px solid white;
+    background-color: #096DB9;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}   
+.links{
+    padding: 0;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.links li{
+    padding: 15px;
+    background-color: #096DB9;
+    margin: 5px;
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 3px;
+    display: none;
+}
+.links li:hover{
+    background-color: #4EA9DB;
+    box-shadow: 0 0 20px #096DB9;
+    scale: 1.1;
+}
+.socials{
+    padding: 5px;
+    background-color: #096DB9;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.socials img{
+    width: 30px;   
+}
+.socials button{
+    width: 60px;   
+}
+.responsive li{
+    display: block;
+}
+a{ 
+    color: #ECECEC ;
+    font-family: 'Yeseva One', "cursive";
+    font-size: .8rem;
+    text-decoration: none;
+    display: block;
+}
+.show-date p{
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+}
+main{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ECECEC;
+}
+main img{
+    width: 100%;
+}
+.hero, .join, .event, .weather,.news, .spotlight{
+    border: .5px solid #096DB9;;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.spotlight section{
+    border: .5px solid #096DB9;
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+p{
+    font-size: .8rem;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+h2{
+    font-size: .8rem;
+    font-family: 'Yeseva One', "cursive";
+    padding: 5px;
+    box-shadow: 0 0 5px #096DB9;
+    text-align: left;
+    padding: 10px;
+    color: black;
+    background-color: #4EA9DB;
+}
+footer{
+    font-family: 'Inter', sans-serif;
+    background-color: #096DB9;
+    margin-top: 10px;
+    text-align: center;
+    color: #ECECEC;
+    padding: 10px;
+    margin: 0;
+}
+footer img{
+    width: 40px;
+}
+footer p{
+    margin: 0;
+    padding-bottom: 0;
+}
+button span{
+    font-size: 1.2em;
+    font-weight: bold;
+}

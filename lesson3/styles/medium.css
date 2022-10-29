@@ -1,0 +1,49 @@
+@media only screen and (min-width: 32.5em){
+    main{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .logo h1{
+        font-size: 1.5rem;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .links li{
+        background-color: #096DB9;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+    }
+    .links li:hover{
+        background-color: #4EA9DB;
+        box-shadow: 0 0 20px #096DB9;
+    }
+    a{ 
+        color: #ECECEC ;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    p{
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    table{
+        padding: 10px;
+        margin: 0 auto;
+    }
+    table th{
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 1rem;
+    
+    }
+    table td{
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}

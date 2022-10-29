@@ -1,0 +1,119 @@
+body{
+    margin: 20px;
+}
+.logo{
+    background-color: #ECECEC;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    align-items: center;
+    padding: 10px;
+}
+.logo h1{
+    font-size: .8rem;
+    text-align: center;
+    font-family: 'Yeseva One', cursive;
+    color: #096DB9;
+}
+.links{
+    padding: 0;
+}
+.links li{
+    padding: 15px;
+    background-color: #096DB9;
+    margin: 5px;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.links li:hover{
+    background-color: #4EA9DB;
+    box-shadow: 0 0 20px #096DB9;
+    scale: 1.1;
+}
+a{ 
+    color: #ECECEC ;
+    font-family: 'Yeseva One', "cursive";
+    font-size: .8rem;
+    text-decoration: none;
+    display: block;
+}
+.logo img{
+    width: 100%;
+}
+main{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-color: #ECECEC;
+}
+main img{
+    width: 100%;
+}
+p{
+    font-size: .8rem;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+}
+h2{
+    font-size: .8rem;
+    font-family: 'Yeseva One', "cursive";
+    padding: 5px;
+    box-shadow: 0 0 5px #096DB9;
+    text-align: left;
+    padding: 10px;
+    color: black;
+    background-color: #4EA9DB;
+}
+footer{
+    font-family: 'Inter', sans-serif;
+    background-color: #096DB9;
+    margin-top: 10px;
+    text-align: center;
+    color: #ECECEC;
+}
+table{
+    padding: 5px;
+    margin: 0 auto;
+}
+table th{
+    border: .5px solid black;
+    padding: 5px;
+    background-color: #4EA9DB;
+    font-size: .7rem;
+
+}
+table td{
+    border: .5px solid black;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+}
+.site_header_sample{
+    font-size: 1.6rem;
+    font-family: 'Yeseva One', cursive;
+    color: #096DB9;
+    background-color: #ECECEC;
+}
+.primary_nav_sample{
+    font-size: 1.2rem;
+    font-family: 'Yeseva One', "cursive";
+    color: #ECECEC;
+    background-color: #096DB9;
+}
+.header2_sample{
+    font-size: 1.2rem;
+    font-family: 'Yeseva One', "cursive";
+    color: black;
+    background-color: #4EA9DB;
+}
+.paragraph_sample{
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 1rem;
+}
+.footer_nav_sample{
+    font-family: 'Inter', sans-serif;
+    background-color: #096DB9;
+    color: #ECECEC;
+    font-size: .8rem;
+}
