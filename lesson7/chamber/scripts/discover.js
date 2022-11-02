@@ -9,8 +9,9 @@ if (diff_in_days == 0){
 	p.append("It has been 0 day(s) since your last visit")
 	window.localStorage.setItem("last_visit", current_visit);
 }
-else if(diff_in_days === NaN){
-	p.append("LOCO")
+else if (isNaN(diff_in_days)){
+	p.append("it has been 0 day(s) since your last visit")
+	window.localStorage.setItem("last_visit", current_visit);
 }
 else {
 	p.append("It has been " + diff_in_days + " day(s) since your last visit");
