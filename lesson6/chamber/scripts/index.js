@@ -1,18 +1,19 @@
 function getDate(){
-let now = new Date();
-let today = new Intl.DateTimeFormat("en-UK", {
-	dateStyle: "full"
-}).format(now);
-document.getElementsByClassName("show-date")[0].innerHTML= today;
+	let now = new Date();
+	let today = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+	document.getElementsByClassName("show-date")[0].innerHTML= today;
 }
+
 function toggleMenu(){
-document.getElementsByClassName("links")[0].classList.toggle("responsive");
+	document.getElementsByClassName("links")[0].classList.toggle("responsive");
 }
+
 function getFooter(){
-let mod= document.lastModified;
-text = "lekkicoc.com &copy; 2022 .:|:. David Ogbaudu .:|:. WDD230 .:|:. Last Updated:" + mod;
-document.getElementsByClassName("footer-text")[0].innerHTML = text;
+	let mod= document.lastModified;
+	let text = "lekkicoc.com &copy; 2022 .:|:. David Ogbaudu .:|:. WDD230 .:|:. Last Updated:" + mod;
+	document.getElementsByClassName("footer-text")[0].innerHTML = text;
 }
+
 function getEvent(){
 	let now = new Date();
 	const day = now.getDay()
@@ -21,5 +22,5 @@ function getEvent(){
 		banner.innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
 		banner.style.color= "black";
 		banner.style.backgroundColor="pink";	
-}
+	}
 }
