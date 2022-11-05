@@ -1,7 +1,3 @@
-body{
-    width: 90%;
-    margin: 0 auto;
-}
 header{
     background-color: #ECECEC;
 }
@@ -106,7 +102,7 @@ main{
 fieldset{
     border-radius: .5rem;
     border: 1px solid #4EA9DB;
-    margin: .5rem;
+    margin: .2rem;
     padding: .5rem;
 }
 legend{
@@ -123,21 +119,21 @@ legend{
 fieldset input{
     padding: .75rem;
     max-width: 450px;
-    width: 280px;
+    width: 270px;
     font-size: 1rem;
     border: 1px solid #4EA9DB;
 
 }
 .pinfo input:required{
     border-left: 10px solid red;
-    width: 270px;
+    width: 260px;
 }
 .pinfo input:required:valid{
     border-left: 10px solid green;
 }
 .submitBtn{
     padding: .5rem;
-    width: 350px;
+    width: 330px;
     display: block;
     margin: 0 auto;
     background-color: #4EA9DB;
