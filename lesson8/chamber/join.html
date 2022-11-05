@@ -38,7 +38,7 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="discovery.html">DISCOVERY</a></li>
                 <li><a href="#">DIRECTORY</a></li>
-                <li><a href="#">JOIN</a></li>
+                <li><a href="join.html">JOIN</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
             <p class="banner"></p>
@@ -59,28 +59,27 @@
             </fieldset>
             <fieldset>
                 <legend>Membership Level</legend>
-                    <p class="np">NP Membership is for non profitorganizations and there is no fee.</p>
                     <select name="level" class="mlevel">
-                        <option value="">Select Level</option>
-                        <option value="bronze">Bronze Membership: Free</option>
+                        <option value="">NP: Free for non profit organizations.</option>
+                        <option value="bronze">Bronze Membership: $200</option>
                         <option value="silver">Silver Membership: $300</option>
-                        <option value="gold">Gold Membership: $350</option>
-                        <option value="platinum">Platinum Membership: $500</option>
+                        <option value="gold">Gold Membership: $450</option>
                     </select> 
             </fieldset>
             <fieldset>
                 <legend>Business Description</legend>
                 <label class="bdisc">Business Description<br><input type="text" minlength="40" maxlength="100"></label>
-                <label class="load-time"><script> document.write(new Date())</script></label>
+                <label class="load-time"><script> localStorage.setItem ("last_laded_date",new Date())</script></label>
             </fieldset>
             <input type="submit" value="Become a member" class="submitBtn">
         </form>
         <div class="benefits">
             <h3>Level Benefits &#9662;</h3>
-            <p><strong>Bronze:</strong> Access to industry meetings, seminars & newsletter </p>
-            <p><strong>Silver:</strong> Access to state loans, industry meetings, seminars & newsletter</p>
-            <p><strong>Gold:</strong> Access to all loan facilities, industry meetings, seminars & newsletter<br></p>
-            <p><strong>Platinum:</strong> Access to all benefits, including annual holiday trips</p>
+            <p><strong>NP:</strong> Access to seminars & newsletter </p>
+            <p><strong>Bronze:</strong> Access to industry meetings, seminars, newsletter, and micro loan facilities </p>
+            <p><strong>Silver:</strong> Access to 1 weekly spotlight advert, state loans, industry meetings,seminars & newsletter</p>
+            <p><strong>Gold:</strong> Access to 2 weekly spotlight adverts, 1 weekly front page advert, all business loan facilities, industry 
+            meetings, seminars, newsletter, and annual holiday trips</p>
         </div> 
         </div>
     </main>
