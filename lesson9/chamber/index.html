@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/index.js"></script>
+    <script src="scripts/windchill.js" defer></script>
+    <link rel="shorcut icon" href="images/favicon.png">
+    <title>lekkicoc.com</title>
+</head>
+<body onload="getDate();getFooter();getEvent()">
+    <header>
+        <nav> 
+            <div class="logo">
+                <img src="images/orion-logo2-50x50.webp" alt="Orion Logo.jpg">
+                <h1>LEKKI CHAMBER OF COMMERCE</h1>       
+                <div class="socials">
+                    <button onclick="toggleMenu()"><span>&#9776;</span></button>
+                    <a href="https://m.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+                    <a href="https://twitter.com/i/flow/login"><img src="images/twitter.png" alt="twitter logo"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram logo"></a>
+                </div>
+            </div>
+            <div>
+                <p class="show-date"></p>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="discovery.html">DISCOVERY</a></li>
+                <li><a href="#">DIRECTORY</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <p class="banner"></p>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h2>Welcome to Lekki Chamber of commerce</h2>
+            <picture>
+                    <source srcset="images/wdd230-img-400w.jpg" media="(max-width: 500px)">
+                    <source srcset="images/wdd230-img-600w.jpg" media="(max-width: 900px)">
+                    <source srcset="images/wdd230-img-800w.jpg" media="(max-width: 2000px)">
+                <img src="images/wdd230-img-400w.jpg" alt="400w">
+            </picture>
+            <p class="small">Small</p>
+            <p class="medium">Medium</p>
+            <p class="large">Large</p>
+            <button><span>Join+</span></button>
+        </div>
+        <div class="event">
+            <h2>EVENTS</h2>
+            <div class="event1">
+                <img src="images/network.jpg" alt="business people chating">
+                <h3>Net-Worth</h3>
+                <span><u>Business Symposium</u><br>
+                      Get to know your industry members and key-players<br>
+                      Date: Thursday at 1pm. <a href="#">more info...</a>
+                </span>
+            </div>
+        </div>
+        <div class="news">
+            <h2>NEWS</h2>
+            <h3>Business News</h3>
+            <p>The Nigerian Midstream and Downstream Petroleum Regulatory Authority has expressed optimism that the 650,000 barrels per day capacity refinery being built by Dangote Industries Limited will significan...</p>
+        </div>
+        <div class="spotlight">
+            <section class="spotlight1">
+                <h3>SPOTLIGHT</h3>
+                <h4>New Members</h4>
+                <p>Name: Adeboyega Samuel<br>Occupation: Engineer<br>Business Location: Lekki, Ajah.</p>
+                <p>Name: Chukwuemeka Igbokwe<br>Occupation: Trader<br>Business Location: Idado, Lekki.</p>
+                <p>Name: Adrian Philips<br>Occupation: Lawyer<br>Business Location: Victoria Island, Lekki.</p>
+            </section>
+            <section class="spotlight2">
+                <h3>SPOTLIGHT</h3>
+                <h4>Member of the month</h4>
+                <img src="images/david.jpg" alt="david's photo">
+                <p>Name: David Ogbaudu<br>Occupation: Jnr. Web Developer<br>Business Location: Lekki, Ajah.</p>
+            </section>
+        </div>
+        <div class="join">
+            <h2>JOIN</h2>
+            <div class="join1">
+                <p>Join our community of business proffessionals and get key information</p>
+
+            </div>
+        </div>
+        <div class="weather">
+            <h2>WEATHER</h2>
+            <div class="weather1">
+                <div>
+                    <img src="images/weather.png" alt="photo of a cloud">
+                </div>
+                <div>
+                    <h3> <span id="temperature">19</span>&#176;F<br>Partly Cloudy</h3>
+                    <span>Wind speed: </span><span id="wind-speed">25</span><span>mph</span><br><span>Wind Chill:</span><span id="result"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <div>
+                <img src="images/orion-logo2-50x50.webp" alt="Orion Logo.jpg">
+            </div>
+            <div >
+                <p><strong>CHAMBER OF COMMERCE</strong></p>
+                <a href="https://www.google.com/maps"><p> &#127759; Km 23 Lekki-Epe Express-way, Lagos.</p></a>
+            </div>
+            <div>
+                <p>ogb18001@byui.edu</p>
+                <p>+(234) 805 271 449</p>
+            </div>
+        </div>
+        <div class="update">
+        <p class="footer-text"></p>
+        </div>
+    </footer>
+</body>
+</html>

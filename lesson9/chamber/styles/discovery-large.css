@@ -1,0 +1,15 @@
+@media only screen and (min-width: 65em){
+    body{
+        width: 90%;
+        margin: 0 auto;
+    }main img{
+        max-width: 800px;
+        display: block;
+        margin: 0 auto;
+    }
+    .logo h1{
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}

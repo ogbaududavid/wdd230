@@ -1,0 +1,60 @@
+@media only screen and (min-width: 32.5em){
+       main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    main img{
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+    }
+    main img:hover{
+        scale: 1.01;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .logo h1{
+        font-size: 1em;
+    }
+    .socials button{
+        display: none;
+    }
+    .socials img{
+        width: 30px;   
+    }
+    .links{
+        display: flex;
+    }
+    .links li{
+        flex: 1 1 100%;
+        text-align: center;
+        display: block;
+    }
+    .socials button{
+        display: none;
+    }
+    .links li a{
+        font-size: 1rem;
+    }
+    footer img{
+        width: 50px;
+    }
+    footer p{
+        font-size: .8em;
+        text-align: left;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr  3fr 2fr;
+    }
+    .footer-text{
+        border-top: 1px solid #ECECEC;
+        text-align: center;
+    }
+}

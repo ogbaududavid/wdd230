@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/join.css">
+    <link rel="stylesheet" type="text/css" href="styles/join-medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/join-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/index.js"></script>
+    <script src="scripts/windchill.js" defer></script>
+    <link rel="shorcut icon" href="images/favicon.png">
+    <title>Join our community.com</title>
+</head>
+<body onload="getDate();getFooter();getEvent()">
+    <header>
+        <nav> 
+            <div class="logo">
+                <img src="images/orion-logo2-50x50.webp" alt="Orion Logo.jpg">
+                <h1>LEKKI CHAMBER OF COMMERCE</h1>       
+                <div class="socials">
+                    <button onclick="toggleMenu()"><span>&#9776;</span></button>
+                    <a href="https://m.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+                    <a href="https://twitter.com/i/flow/login"><img src="images/twitter.png" alt="twitter logo"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram logo"></a>
+                </div>
+            </div>
+            <div>
+                <p class="show-date"></p>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="discovery.html">DISCOVERY</a></li>
+                <li><a href="#">DIRECTORY</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <p class="banner"></p>
+        </nav>
+    </header>
+    <main>
+        <h2>Join Our Community</h2>
+        <div class="form-page">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="pinfo">First name<br> <input type="text" name="fname" required></label>
+                <label class="pinfo">Last name<br> <input type="text" name="lname" required></label>
+                <label class="pinfo">Business Position<br> <input type="text" name="bustitle" minlength="7"  maxlength="20"></label>
+                <label class="pinfo">Email<br> <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                <label class="pinfo">Telephone<br> <input type="tel" name="tel" required></label>
+                <label class="pinfo">Business Name<br> <input type="text" name="busname"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                    <select name="level" class="mlevel">
+                        <option value="">NP: Free for non profit organizations.</option>
+                        <option value="bronze">Bronze Membership: $200</option>
+                        <option value="silver">Silver Membership: $300</option>
+                        <option value="gold">Gold Membership: $450</option>
+                    </select> 
+            </fieldset>
+            <fieldset>
+                <legend>Business Description</legend>
+                <label class="bdisc">Business Description<br><input type="text" minlength="40" maxlength="100"></label>
+                <label class="load-time"><script> localStorage.setItem ("last-laded-date",new Date())</script></label>
+            </fieldset>
+            <input type="submit" value="Become a member" class="submitBtn">
+        </form>
+        <div class="benefits">
+            <h3>Level Benefits &#9662;</h3>
+            <p><strong>NP:</strong> Access to seminars & newsletter </p>
+            <p><strong>Bronze:</strong> Access to industry meetings, seminars, newsletter, and micro loan facilities </p>
+            <p><strong>Silver:</strong> Access to 1 weekly spotlight advert, state loans, industry meetings,seminars & newsletter</p>
+            <p><strong>Gold:</strong> Access to 2 weekly spotlight adverts, 1 weekly front page advert, all business loan facilities, industry 
+            meetings, seminars, newsletter, and annual holiday trips</p>
+        </div> 
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <div>
+                <img src="images/orion-logo2-50x50.webp" alt="Orion Logo.jpg">
+            </div>
+            <div >
+                <p><strong>CHAMBER OF COMMERCE</strong></p>
+                <a href="https://www.google.com/maps"><p> &#127759; Km 23 Lekki-Epe Express-way, Lagos.</p></a>
+            </div>
+            <div>
+                <p>ogb18001@byui.edu</p>
+                <p>+(234) 805 271 449</p>
+            </div>
+        </div>
+        <div class="update">
+        <p class="footer-text"></p>
+        </div>
+    </footer>
+</body>
+</html>

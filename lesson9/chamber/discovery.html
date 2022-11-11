@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/discovery.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/discovery-medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/discovery-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/index.js"></script>
+    <script src="scripts/discover.js" defer></script>
+    <link rel="shorcut icon" href="images/favicon.png">
+    <title>Discovery Page</title>
+</head>
+<body onload="getDate();getFooter();getEvent()">
+    <header>
+        <nav> 
+            <div class="logo">
+                <img src="images/orion-logo2-50x50.webp" alt="Orion Logo.jpg">
+                <h1>LEKKI CHAMBER OF COMMERCE</h1>       
+                <div class="socials">
+                    <button onclick="toggleMenu()"><span>&#9776;</span></button>
+                    <a href="https://m.facebook.com/"><img src="images/facebook.png" alt="facebook logo"></a>
+                    <a href="https://twitter.com/i/flow/login"><img src="images/twitter.png" alt="twitter logo"></a>
+                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram logo"></a>
+                </div>
+            </div>
+            <div>
+                <p class="show-date"></p> 
+            </div>
+            <ul class="links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="discovery.html">DISCOVERY</a></li>
+                <li><a href="#">DIRECTORY</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <p class="banner"></p>
+        </nav>
+    </header>
+    <p class="showVisits"></p>
+    <main>
+        <div class="places">
+            <div class="lcc">
+                <h2>Lekki Conservation Center</h2>
+                <picture>
+                        <source media="(max-width: 500px)" srcset="images/place-holder.webp" data-srcset="images/lcc-400w.jpg">
+                        <source media="(max-width: 900px)" srcset="images/place-holder.webp" data-srcset="images/lcc-600w.jpg">
+                        <source media="(max-width: 2000px)" srcset="images/place-holder.webp" data-srcset="images/lcc-800w.jpg">
+                    <img src="images/lcc-400w.jpg" alt="lekki conservation center">
+                </picture>
+                <p>The Centre was established in 1990 to serve as biodiversity conservation icon and 
+                    environment education centre. The facility was built by the Chevron Corporation 
+                    for the Nigerian Conservation Foundation (NCF), as a reserved sanctuary for the 
+                    rich flora and fauna of the Lekki Peninsula.
+                </p>
+            </div>
+            <div class="lekki-ikoyi-bridge">
+                <h2>Lekki-Ikoyi Link Bridge</h2>
+                <picture>
+                        <source media="(max-width: 500px)" srcset="images/place-holder.webp" data-srcset="images/lekki-bridge-400w.jpg">
+                        <source media="(max-width: 900px)" srcset="images/place-holder.webp" data-srcset="images/lekki-bridge-600w.jpg">
+                        <source media="(max-width: 2000px)" srcset="images/place-holder.webp" data-srcset="images/lekki-bridge-800w.jpg">
+                    <img src="images/lekki-bridge-400w.jpg" alt="lekki-ikoyi link bridge">
+                </picture>
+                <p>The Lekki-Ikoyi Link Bridge, is a 1.36 km (0.84 mile) cable-stayed bridge in Lagos 
+                    State. It links the Phase 1 area of Lekki, with Ikoyi district of Lagos. The bridge 
+                    was commissioned on 29 May 2013 by the Governor of Lagos State, Babatunde Raji Fashola.
+            </div>
+            <div class="lekki-toll-gate">
+                <h2>Admiralty Circle Plaza</h2>
+                <picture>
+                        <source media="(max-width: 500px)" srcset="images/place-holder.webp" data-srcset="images/lekki-toll-gate-400w.jpg">
+                        <source media="(max-width: 900px)" srcset="images/place-holder.webp" data-srcset="images/lekki-toll-gate-600w.jpg">
+                        <source media="(max-width: 2000px)" srcset="images/place-holder.webp" data-srcset="images/lekki-toll-gate-800w.jpg">
+                    <img src="images/lekki-toll-gate-400w.jpg" alt="admiralty toll plaza">
+                </picture>
+                <p>The Admiralty Circle plaza is located in the Eti-Osa Local Government 
+                    Area of Lagos State in Nigeria. It was established to collect tolls 
+                    along the 49 km road expansion on Lekki–Eti-Osa Expressway. This was 
+                    where the infamous endsars massacre took place.
+            </div>
+            <div class="ajah-market">
+                <h2>Ajah Market</h2>
+                <picture>
+                        <source media="(max-width: 500px)" srcset="images/place-holder.webp" data-srcset="images/ajah-market-400w.jpg">
+                        <source media="(max-width: 900px)" srcset="images/place-holder.webp" data-srcset="images/ajah-market-600w.jpg">
+                        <source media="(max-width: 2000px)" srcset="images/place-holder.webp" data-srcset="images/ajah-market-800w.jpg">
+                    <img src="images/ajah-market-400w.jpg" alt="ajah market">
+                </picture>
+                <p>Ajah Market is littered with shops, markets, malls, 
+                    supermarkets, and stalls. It also has a commercial bus garrage, wheree people are able to board
+                    inter and intra city buses.</p>
+            </div>
+            <div class="circle-mall">
+                <h2>Circle Mall</h2>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/place-holder.webp" data-srcset="images/circle-mall-400w.jpg">
+                    <source media="(max-width: 900px)" srcset="images/place-holder.webp" data-srcset="images/circle-mall-600w.jpg">
+                    <source media="(max-width: 2000px)" srcset="images/place-holder.webp" data-srcset="images/circle-mall-800w.jpg" >
+                <img src="images/circle-mall-400w.jpg" alt="circle mall">
+                </picture>
+                <p>Designed by one of Africa's foremost retail architects and built by one of Nigeria's 
+                    best-known construction companies, circle mall is a prime retail and office development, 
+                    anchored by Shoprite and film house cinemas. The mall is conveniently located on 
+                    the Lekki-Epe expressway on approximately 32 000m2 of land.
+                </p>
+            </div>
+        </div>
+        <div class="demography">
+            <h2>Important facts about lekki</h2>
+            <picture>
+                    <source media="(max-width: 500px)" srcset="images/place-holder.webp" data-srcset="images/lekki-400w.jpg">
+                    <source media="(max-width: 900px)" srcset="images/place-holder.webp" data-srcset="images/lekki-600w.jpg">
+                    <source media="(max-width: 2000px)" srcset="images/place-holder.webp" data-srcset="images/lekki-800w.jpg">
+                <img src="images/lekki-400w.jpg" alt="arial view of lekki">
+            </picture>
+            <p>Lekki is a city in Lagos State, Nigeria. It is located to the south-east of Lagos city. 
+                Lekki is a naturally formed peninsula, adjoining to its west Victoria Island and Ikoyi 
+                districts of Lagos, with the Atlantic Ocean to its south, Lagos Lagoon to the north, 
+                and Lekki Lagoon to its east. The peninsula is approximately 70 
+                to 80 km long, with an average width of 10 km, and a population of about 1.8 million residents
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <div class="contact">
+            <div>
+                <img src="images/orion-logo2-50x50.webp" alt="Orion Logo.jpg">
+            </div>
+            <div >
+                <p><strong>CHAMBER OF COMMERCE</strong></p>
+                <a href="https://www.google.com/maps"><p> &#127759; Km 23 Lekki-Epe Express-way, Lagos.</p></a>
+            </div>
+            <div>
+                <p>ogb18001@byui.edu</p>
+                <p>+(234) 805 271 449</p>
+            </div>
+        </div>
+        <div class="update">
+        <p class="footer-text"></p>
+        </div>
+    </footer>
+</body>
+</html>
