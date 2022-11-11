@@ -1,0 +1,104 @@
+{
+    "businesses": [
+        {
+            "businessName": "Mercedes Benz",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Car Manufacturing/Sales",
+            "imageurl": "images/mercedes.webp",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 1
+        },
+        {
+            "businessName": "Chevron Oil & Gas",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Oil and Gas",
+            "imageurl": "images/chevron.png",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 2
+        },
+        {
+            "businessName": "Ebeano Supermarkets",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Supermarket",
+            "imageurl": "images/ebeano.jpg",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Silver",
+            "order": 3
+        },
+        {
+            "businessName": "Innoson Vehicles",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Car Manufacturing/Sales",
+            "imageurl": "images/innoson-vehicles.jpg",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 4
+        },
+        {
+            "businessName": "KFC",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "fast Food",
+            "imageurl": "images/kfc.jpg",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 5
+        },
+        {
+            "businessName": "Miniso",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Supermerket",
+            "imageurl": "images/miniso.png",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 6
+        },
+        {
+            "businessName": "Shoprite Retail Supermarket",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Supermarket",
+            "imageurl": "images/shoprite.webp",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 7
+        },
+        {
+            "businessName": "Stanbic IBTC Bank",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Commercial Bank",
+            "imageurl": "images/stanbic-bank.jpg",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 8
+        },
+        {
+            "businessName": "Swisstrade Doors",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Furniture Manufacturing",
+            "imageurl": "images/swisstrade.jpg",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 9
+        },
+        {
+            "businessName": "Total Energies",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Oil and Gas",
+            "imageurl": "images/total-logo",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "Gold",
+            "order": 10
+        }
+    ]   
+}
