@@ -105,9 +105,10 @@ main{
     text-align: center;
 }
 .cards section img{
-    width: 50%;
+    width: 90%;
     display: block;
     margin: 0 auto;
+    padding: 5px;
 }
 .cards section p{
     margin: 0px;
