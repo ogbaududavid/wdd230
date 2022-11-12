@@ -4,8 +4,8 @@
             "businessName": "Mercedes Benz",
             "address": "Lekki",
             "telephone": 234899899,
-            "industry": "Car Manufacturing/Sales",
-            "imageurl": "images/mercedes.webp",
+            "industry": "Car Manufacturing/Sales", 
+            "imageurl": "json/images/mercedes.webp",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Gold",
             "order": 1
@@ -15,7 +15,7 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Oil and Gas",
-            "imageurl": "images/chevron.png",
+            "imageurl": "json/images/chevron.png",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Gold",
             "order": 2
@@ -25,7 +25,7 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Supermarket",
-            "imageurl": "images/ebeano.jpg",
+            "imageurl": "json/images/ebeano.jpg",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Silver",
             "order": 3
@@ -35,7 +35,7 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Car Manufacturing/Sales",
-            "imageurl": "images/innoson-vehicles.jpg",
+            "imageurl": "json/images/innoson-vehicles.jpg",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Gold",
             "order": 4
@@ -45,7 +45,7 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "fast Food",
-            "imageurl": "images/kfc.jpg",
+            "imageurl": "json/images/kfc.jpg",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Gold",
             "order": 5
@@ -55,7 +55,7 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Supermerket",
-            "imageurl": "images/miniso.png",
+            "imageurl": "json/images/miniso.png",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Gold",
             "order": 6
@@ -65,7 +65,7 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Supermarket",
-            "imageurl": "images/shoprite.webp",
+            "imageurl": "json/images/shoprite.webp",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Gold",
             "order": 7
@@ -75,9 +75,9 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Commercial Bank",
-            "imageurl": "images/stanbic-bank.jpg",
+            "imageurl": "json/images/stanbic-bank.jpg",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
-            "membershipLevel": "Gold",
+            "membershipLevel": "Silver",
             "order": 8
         },
         {
@@ -85,7 +85,7 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Furniture Manufacturing",
-            "imageurl": "images/swisstrade.jpg",
+            "imageurl": "json/images/swisstrade.jpg",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Gold",
             "order": 9
@@ -95,10 +95,20 @@
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Oil and Gas",
-            "imageurl": "images/total-logo",
+            "imageurl": "json/images/total-logo.jpg",
             "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
             "membershipLevel": "Gold",
             "order": 10
+        },
+        {
+            "businessName": "LEAP",
+            "address": "Lekki",
+            "telephone": 234899899,
+            "industry": "Nont for Proit Organization",
+            "imageurl": "json/images/leap.jpg",
+            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "membershipLevel": "NP",
+            "order": 11
         }
     ]   
 }
