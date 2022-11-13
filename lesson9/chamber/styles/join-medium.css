@@ -89,12 +89,20 @@
         border-top: 1px solid #ECECEC;
         text-align: center;
     }
-    .form-page{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     .pinfo input:required{
         border-left: 10px solid red;
         width: 290px;
     }
+    .form-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0;
+    }
+    form{
+        grid-column: 1/2;
+    }
+    .benefits{
+        grid-column: 2/3;
+    }
+   
 }

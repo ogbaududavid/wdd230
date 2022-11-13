@@ -124,12 +124,26 @@ fieldset input{
     border: 1px solid #4EA9DB;
 
 }
-.pinfo input:required{
+fieldset textarea{
+    padding: .75rem;
+    max-width: 450px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #4EA9DB;
+}
+.pinfo input:required,.bdisc input:required{
     border-left: 10px solid red;
-    width: 260px;
+    width: 290px;
 }
 .pinfo input:required:valid{
     border-left: 10px solid green;
+}
+select{
+    padding: .75rem;
+    max-width: 450px;
+    width: 325px;
+    font-size: 1rem;
+    border: 1px solid #4EA9DB;
 }
 .submitBtn{
     padding: .5rem;
