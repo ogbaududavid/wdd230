@@ -1,0 +1,108 @@
+@media only screen and (min-width: 32.5em){
+    main img:hover{
+        scale: 1.01;
+    }
+    .links{
+        display: flex;
+    }
+    .links li{
+        flex: 1 1 100%;
+        text-align: center;
+        display: block;
+    }
+    .socials button{
+        display: none;
+    }
+    .links li a{
+        font-size: 1rem;
+    }
+    main{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-color: #ECECEC;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    fieldset{
+        border-radius: .5rem;
+        border: 1px solid #4EA9DB;
+        margin: 1rem;
+        padding: 1rem;
+        max-width: 400px;
+    }
+    legend{
+        margin-left: .3rem;
+        padding: .5rem;
+    }
+    .pinfo, .mlevel, .bdisc{
+        display: block;
+        padding: .8rem 0rem;
+    }
+    fieldset input{
+        padding: .75rem;
+        max-width: 450px;
+        width: 300px;
+        font-size: 1rem;
+        border: 1px solid #4EA9DB;
+    }
+    .submitBtn{
+        padding: .5rem;
+        width: 350px;
+        display: block;
+        margin: 0 auto;
+        background-color: #4EA9DB;
+        font-size: 1rem;
+        border-radius: .5rem;
+        border: 2px solid black;
+    }
+    .thankyou{
+        width: 60%;
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+    p{
+        font-size: 1rem;
+        padding: 10px;
+        font-family: 'Inter', sans-serif;
+    }
+    h2{
+        font-size: 1.2rem;
+        font-family: 'Yeseva One', "cursive";
+        padding: 10px;
+        text-align: center;
+        color: black;
+        background-color: #4EA9DB;
+    }
+    footer img{
+        width: 50px;
+    }
+    footer p{
+        font-size: .8em;
+        text-align: left;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr  3fr 2fr;
+    }
+    .footer-text{
+        border-top: 1px solid #ECECEC;
+        text-align: center;
+    }
+    .pinfo input:required{
+        border-left: 10px solid red;
+        width: 290px;
+    }
+    .form-page{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0;
+    }
+    form{
+        grid-column: 1/2;
+    }
+    .benefits{
+        grid-column: 2/3;
+    }
+   
+}

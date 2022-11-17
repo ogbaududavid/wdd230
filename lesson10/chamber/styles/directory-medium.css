@@ -1,0 +1,53 @@
+@media only screen and (min-width: 32.5em){
+    body{
+       width: 90%;
+       margin: 0 auto;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .logo img{
+        width: 50px;
+    }
+    .logo h1{
+        font-size: 1em;
+    }
+    .socials button{
+        display: none;
+    }
+    .socials img{
+        width: 30px;   
+    }
+    .links{
+        display: flex;
+    }
+    .links li{
+        flex: 1 1 100%;
+        text-align: center;
+        display: block;
+    }
+    .links li a{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    footer img{
+        width: 50px;
+    }
+    footer p{
+        font-size: .8em;
+        text-align: left;
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr  3fr 2fr;
+    }
+    .footer-text{
+        border-top: 1px solid #ECECEC;
+        text-align: center;
+    }
+}

@@ -1,0 +1,28 @@
+main{
+    
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 150px;
+}
+h1{
+    font-size: 1.7rem;
+    background-color: gray;
+    padding: 10px;
+    color: white;
+}
+p{
+    font-size: .8rem;
+}
+h2{
+    font-size: 1.2rem;
+}
+main:hover{
+    scale: 1.05;
+    box-shadow: 0 0 10px black;
+}
+img{
+    width: 80%;
+}
