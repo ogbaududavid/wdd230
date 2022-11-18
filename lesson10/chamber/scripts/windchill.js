@@ -26,10 +26,10 @@ function displayResults(weatherData) {
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
 
-  currentTemperature.innerHTML = weatherData.main.temp;
+  currentTemperature.innerHTML = weatherData.main.temp.toFixed(0);
   weatherIcon.setAttribute("src", iconsrc)
   weatherIcon.setAttribute("alt", desc)
-  windSpeed.innerHTML = weatherData.wind.speed;
+  windSpeed.innerHTML = weatherData.wind.speed.toFixed(0);
   currentCondition.innerHTML = weatherData.weather[0].description;
   let chill =  35.74 + (0.6215 * currentTemperature) - (35.75 * (windSpeed ** 0.16)) + (0.4275 * currentTemperature * (windSpeed ** 0.16));
   if (isNaN(chill)) {
