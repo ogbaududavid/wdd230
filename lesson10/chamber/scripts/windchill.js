@@ -1,5 +1,4 @@
-//const weatherUrl =  "https://api.openweathermap.org/data/2.5/weather?id=2332453&appid=b6f2d588b3f237931066c85d53d0e44c&units=imperial"
-const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=41.139981&lon=-104.820246&units=imperial&appid=b6f2d588b3f237931066c85d53d0e44c"
+const weatherUrl =  "https://api.openweathermap.org/data/2.5/weather?id=2332453&appid=b6f2d588b3f237931066c85d53d0e44c&units=imperial"
 async function apiFetch(){
   try{
     const response = await fetch(weatherUrl);
@@ -19,18 +18,24 @@ async function apiFetch(){
 apiFetch()
 
 function displayResults(weatherData) {
-  var currentTemperature = document.getElementById("temperature");
-  var windSpeed = document.getElementById("wind-speed");
-  const windChill = document.getElementById("result");
-  const currentCondition = document.getElementById("condition");
+  const currentTemperature = weatherData.main.temp.toFixed(0);
+  const windSpeed = weatherData.wind.speed.toFixed(0);
+  const currentCondition = weatherData.weather[0].description;
   const weatherIcon = document.getElementById("weather-icon");
   const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
   const desc = weatherData.weather[0].description;
 
-  currentTemperature.innerHTML = parseFloat(weatherData.main.temp.toFixed(0));
+  document.getElementById("temperature").innerHTML = currentTemperature;
+  document.getElementById("wind-speed").innerHTML = windSpeed;
+  document.getElementById("condition").innerHTML = currentCondition;
   weatherIcon.setAttribute("src", iconsrc)
   weatherIcon.setAttribute("alt", desc)
-  windSpeed.innerHTML = parseFloat(weatherData.wind.speed.toFixed(0));
-  currentCondition.innerHTML = weatherData.weather[0].description;
-  windChill.innerHTML =  35.74 + 0.6215 * currentTemperature - 35.75 * windSpeed ** 0.16 + 0.4275 * currentTemperature * windSpeed ** 0.16;
+  windChill =  (35.74 + (0.6215 * currentTemperature) - (35.75 * (windSpeed ** 0.16)) + (0.4275 * currentTemperature * (windSpeed ** 0.16))).toFixed(0);
+  
+  if (currentTemperature > 50 || windSpeed <= 3 ) {
+    document.getElementById("result").innerHTML="N/A";
+  }
+  else{
+    document.getElementById("result").innerHTML = windChill;
+  }
 }

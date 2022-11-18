@@ -217,7 +217,16 @@ main img{
 .weather1 span{
     color: #ECECEC;
     text-align: left;
+    padding: 2px;
+}
+#temperature{
+    font-size: 2rem;
+    font-family: 'Yeseva One', "cursive";
+}
+#condition{
+    margin: 0px;
     padding: 5px;
+    border-bottom: 1px solid white;
 }
 .news h3{
     border-bottom: 1px solid #4EA9DB;
