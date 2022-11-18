@@ -1,10 +1,41 @@
-const t = document.getElementById("temperature").innerHTML;
-const wind_speed = document.getElementById("wind-speed").innerHTML;
-if (t <=50 && wind_speed > 3.0){
-  let wind_chill = parseInt(35.74 + (0.6215 * t) - (35.75 * (wind_speed ** 0.16)) + (0.4275 * t * (wind_speed ** 0.16)));
-  document.getElementById("result").innerHTML = wind_chill+"&#176; F";
+const weatherUrl =  "https://api.openweathermap.org/data/2.5/weather?id=2332453&appid=b6f2d588b3f237931066c85d53d0e44c&units=imperial"
+async function apiFetch(){
+  try{
+    const response = await fetch(weatherUrl);
+    if (response.ok){
+      const data = await response.json();
+      console.log(data)
+      displayResults(data)
+    }
+    else {
+      throw Error (await response.text());
+    }
+  }
+  catch (error){
+    console.log(error);
+  }
 }
-else{
-  document.getElementById("result").innerHTML = "N/A";
-  alert(" input a temperature that is <=50 and a wind_speed that is > 3.0")
+apiFetch()
+
+function displayResults(weatherData) {
+  const currentTemperature = document.getElementById("temperature");
+  const windSpeed = document.getElementById("wind-speed");
+  let windChill = document.getElementById("result");
+  const currentCondition = document.getElementById("condition");
+  const weatherIcon = document.getElementById("weather-icon");
+  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  const desc = weatherData.weather[0].description;
+
+  currentTemperature.innerHTML = weatherData.main.temp;
+  weatherIcon.setAttribute("src", iconsrc)
+  weatherIcon.setAttribute("alt", desc)
+  windSpeed.innerHTML = weatherData.wind.speed;
+  currentCondition.innerHTML = weatherData.weather[0].description;
+  let chill =  35.74 + (0.6215 * currentTemperature) - (35.75 * (windSpeed ** 0.16)) + (0.4275 * currentTemperature * (windSpeed ** 0.16));
+  if (isNaN(chill)) {
+    windChill.innerHTML="N/A";
+  }
+  else{
+    windChill.innerHTML = chill;
+  }
 }

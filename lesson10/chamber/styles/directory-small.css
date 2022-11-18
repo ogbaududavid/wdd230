@@ -93,19 +93,43 @@ a{
     font-weight: bold;
 
 }
+button{
+    padding: 10px;
+    margin: 0 auto;
+    color: #096DB9;
+    background-color: #ECECEC;
+    font-size: 1.2rem;
+    font-family: 'Yeseva One', "cursive";
+    margin-right: 5px;
+    margin-left: 5px;
+}
+button:hover{
+    scale: 1.05;
+}
+.submit-Btns{
+    background-color: #096DB9;
+    padding: 5px;
+    text-align: center;
+}
 main{
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #ECECEC;
 }
-.cards {
+.list-view .cards{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+.grid-view .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 10px;
     text-align: center;
 }
 .cards section img{
-    width: 90%;
+    max-width: 50%;
     display: block;
     margin: 0 auto;
     padding: 5px;

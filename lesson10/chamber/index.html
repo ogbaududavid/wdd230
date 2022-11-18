@@ -18,7 +18,7 @@
     <link rel="shorcut icon" href="images/favicon.png">
     <title>lekkicoc.com</title>
 </head>
-<body onload="getDate();getFooter();getEvent();showWeather()">
+<body onload="getDate();getFooter();getEvent()">
     <header>
         <nav> 
             <div class="logo">
@@ -100,11 +100,12 @@
             <h2>WEATHER</h2>
             <div class="weather1">
                 <div>
-                    <img src="images/weather.png" alt="photo of a cloud">
+                    <img src="" alt="" id="weather-icon">
                 </div>
                 <div>
-                    <h3> <span id="temperature">19</span>&#176;F<br>Partly Cloudy</h3>
-                    <span>Wind speed: </span><span id="wind-speed">25</span><span>mph</span><br><span>Wind Chill:</span><span id="result"></span>
+                    <h3> <span id="temperature"></span>&#176;F</h3>
+                    <h3 id="condition"></h3>
+                    <span>Wind speed: </span><span id="wind-speed"></span><span>mph</span><br><span>Wind Chill:</span><span id="result"></span>
                 </div>
             </div>
         </div>

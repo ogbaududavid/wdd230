@@ -38,3 +38,19 @@ function displayBusiness(business){
 }
 
 
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("cards");
+
+
+gridbutton.addEventListener("click", ()=>{
+    display.classList.add("grid-view");
+    display.classList.remove("list-view");
+});
+
+listbutton.addEventListener("click", showList);
+
+function showList() {
+	display.classList.add("list-view");
+	display.classList.remove("grid-view");
+}
