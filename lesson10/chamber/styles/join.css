@@ -211,6 +211,3 @@ footer p{
     display: flex;
     flex-direction: column;
 }
-.load-time{
-    display: none;
-}
