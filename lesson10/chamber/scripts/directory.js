@@ -40,7 +40,7 @@ function displayBusiness(business){
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("cards");
+const display = document.querySelector("main");
 
 
 gridbutton.addEventListener("click", ()=>{
