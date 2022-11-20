@@ -29,7 +29,5 @@ function getEvent(){
 
 function showDate(){
 	let showDate = document.getElementsByClassName("load-time")[0];
-	let input = document.createElement("input");
-	input.value = new Date();
-	showDate.appendChild(input);
+	showDate.value = new Date();
 }
