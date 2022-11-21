@@ -204,6 +204,7 @@ main img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding: 10px;
 }
 .weather1 h3{
     color: #ECECEC;
@@ -285,6 +286,11 @@ footer img{
 footer p{
     margin: 0;
     padding-bottom: 0;
+}
+.weather-credit a{
+    color: rgb(254, 201, 104);
+    padding-top: 10px;
+    border-top: 1px solid white;
 }
 button span{
     font-size: 1.2em;

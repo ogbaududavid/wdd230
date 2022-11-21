@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/directory-small.css">
-    <link rel="stylesheet" type="text/css" href="styles/directory-medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/join.css">
+    <link rel="stylesheet" type="text/css" href="styles/join-medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/join-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
@@ -13,11 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <script src="scripts/index.js"></script>
-    <script src="scripts/directory.js" defer></script>
     <link rel="shorcut icon" href="images/favicon.png">
-    <title>lekkicoc.com</title>
+    <title>Join our community.com</title>
 </head>
-<body onload="getDate();getFooter();getEvent()">
+<body onload="getDate();getFooter();getEvent();showDate()">
     <header>
         <nav> 
             <div class="logo">
@@ -41,16 +41,26 @@
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
             <p class="banner"></p>
-            <div class="submit-Btns">
-                <button id="grid">Grid View</button> <button id="list">Column View</button>
-            </div>
         </nav>
     </header>
-    <main class="list-view">
-        <div class="cards">
-            
+    <main>
+        <h2>Contact Us</h2>
+        <div class="form-page">
+            <div class="benefits">
+                <p>Please leave  us a message, and we'll be sure to get back to you.</p>
+            </div> 
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="pinfo">Full name<br> <input type="text" name="fullname" required placeholder="Jane Doe"></label>
+                    <label class="pinfo">Email<br> <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    <label class="pinfo">Telephone<br> <input type="tel" name="tel"></label>
+                    <label class="pinfo">Your Message<br><textarea name="message" maxlength="150"></textarea></label>
+                    <label class="pinfo"><input type="hidden" name="load-time" class="load-time"><label></label>
+                </fieldset>
+                <input type="submit" value="Contact Us" class="submitBtn">
+            </form>
         </div>
-    
     </main>
     <footer>
         <div class="contact">
@@ -72,3 +82,4 @@
     </footer>
 </body>
 </html>
+             

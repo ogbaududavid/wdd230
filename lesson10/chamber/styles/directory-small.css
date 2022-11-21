@@ -102,6 +102,13 @@ button{
     font-family: 'Yeseva One', "cursive";
     margin-right: 5px;
     margin-left: 5px;
+    border: none;
+    box-shadow: 0 0 20px black;
+    border-radius: 5px;
+}
+button:onclick{
+    background-color: black;
+    color: white;
 }
 button:hover{
     scale: 1.05;
