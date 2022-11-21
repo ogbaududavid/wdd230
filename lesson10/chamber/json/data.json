@@ -6,7 +6,7 @@
             "telephone": 234899899,
             "industry": "Car Manufacturing/Sales", 
             "imageurl": "json/images/mercedes.webp",
-            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "websiteurl": "https://www.mercedes-benz.com.ng/",
             "membershipLevel": "Gold",
             "order": 1
         },
@@ -76,7 +76,7 @@
             "telephone": 234899899,
             "industry": "Commercial Bank",
             "imageurl": "json/images/stanbic-bank.jpg",
-            "websiteurl": "https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjmgY2Kxqj7AhUN83cKHf3pB_EYABAAGgJlZg&ohost=www.google.com&cid=CAESa-D2gbsRINChSlf25NxzHKqHrVK0fqIpetkFunUHUIDiv4jhdvNWVr5jmH8lsv3_tbe1Kor0qbyOWqVLbnoisbRpy7HAbvDi1a860qTL5zXhULGXY5-OO7cFs2fFk2lk3J7c2rnIAzHmgLBd&sig=AOD64_1eqOVdGYMaAQ_as5vA30-KixNh4g&q&adurl&ved=2ahUKEwjP5v-Jxqj7AhVn_rsIHaCqBMYQ0Qx6BAgJEAE",
+            "websiteurl": "https://www.stanbicibtcbank.com/",
             "membershipLevel": "Silver",
             "order": 8
         },
@@ -86,7 +86,7 @@
             "telephone": 234899899,
             "industry": "Furniture Manufacturing",
             "imageurl": "json/images/swisstrade.jpg",
-            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "websiteurl": "https://swisstradezu.com/",
             "membershipLevel": "Gold",
             "order": 9
         },
@@ -96,17 +96,17 @@
             "telephone": 234899899,
             "industry": "Oil and Gas",
             "imageurl": "json/images/total-logo.jpg",
-            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "websiteurl": "https://totalenergies.com/nigeria",
             "membershipLevel": "Gold",
             "order": 10
         },
         {
-            "businessName": "LEAP",
+            "businessName": "LEAP Africa",
             "address": "Lekki",
             "telephone": 234899899,
             "industry": "Nont for Proit Organization",
             "imageurl": "json/images/leap.jpg",
-            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "websiteurl": "https://leapafrica.org/",
             "membershipLevel": "NP",
             "order": 11
         },
@@ -116,7 +116,7 @@
             "telephone": 234899899,
             "industry": "Nont for Proit Organization",
             "imageurl": "json/images/girl-hub-africa.jpg",
-            "websiteurl": "https://www.mercedes-benz.com.ng/en/desktop/passenger-cars.html",
+            "websiteurl": "https://web.facebook.com/girlhubafrica/",
             "membershipLevel": "NP",
             "order": 11
         }

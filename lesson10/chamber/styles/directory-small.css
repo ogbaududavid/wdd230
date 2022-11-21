@@ -106,7 +106,7 @@ button{
     box-shadow: 0 0 20px black;
     border-radius: 5px;
 }
-button:onclick{
+button:focus{
     background-color: black;
     color: white;
 }
@@ -147,6 +147,10 @@ main{
 .cards section p{
     margin: 0px;
     padding: 0px;
+}
+.cards section a{
+    color: black;
+    font-family: 'Inter', sans-serif;
 }
 .cards section{
     box-shadow: 0 2px 5px black;

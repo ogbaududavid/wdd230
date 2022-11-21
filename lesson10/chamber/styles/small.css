@@ -160,6 +160,9 @@ main img{
     box-shadow: 0 0 10px;
     opacity: .8;
 }
+.hero button .join-link span{
+    color: black;
+}
 .event1{
     box-shadow: 0 0 5px;
     display: grid;

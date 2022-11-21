@@ -16,6 +16,7 @@ function displayBusiness(business){
     let p1 = document.createElement("P");
     let p2 = document.createElement("p");
     let p3 = document.createElement("p");
+    let a = document.createElement("a");
     let img = document.createElement("img");
     let section = document.createElement("section")
 
@@ -23,6 +24,10 @@ function displayBusiness(business){
     p1.textContent = `Industry: ${business.industry}`;
     p2.textContent = `Business Location: ${business.address}`;
     p3.textContent = `Membership Level: ${business.membershipLevel}`;
+    a.textContent = business.websiteurl;
+    a.style.color="green";
+
+    a.setAttribute("href", business.websiteurl);
     img.setAttribute("src", business.imageurl);
     img.setAttribute("alt", `${business.businessName} logo`)
     img.setAttribute("loading", "lazy");
@@ -32,6 +37,7 @@ function displayBusiness(business){
     section.appendChild(p1);
     section.appendChild(p2);
     section.appendChild(p3);
+    section.appendChild(a)
 
     cards.appendChild(section);
 
