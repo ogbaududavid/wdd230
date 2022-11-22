@@ -6,7 +6,7 @@ header{
     font-family: 'Yeseva One', cursive;
     align-items: center;
     color: #096DB9;
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: center;
 }
@@ -21,8 +21,6 @@ header{
     padding: 5px;
 }
 .show-date{
-    margin-left: 10px;
-    margin-right: 10px;
     color: #ECECEC;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -31,6 +29,7 @@ header{
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
+    padding: 15px;
 }  
 .socials{
     margin: 10px;
@@ -69,6 +68,9 @@ header{
 .socials button{
     width: 50px;   
 }
+.responsive{
+    margin: 0px;
+}
 .responsive li{
     display: block;
 }
@@ -88,9 +90,8 @@ a{
 .banner{
     display: block;
     text-align: center;
-    margin-left: 10px;
-    margin-right: 10px;
     font-weight: bold;
+    margin-top: 3px;
 
 }
 main{
@@ -102,15 +103,21 @@ main img{
     width: 100%;
 }
 .hero, .join, .event, .weather,.news, .spotlight{
-   
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.spotlight{
+    margin-top: 5px;
+    padding: 0px;
+    text-align: center;
+    
 }
 .spotlight section{
-    padding: 10px;
+    padding: 12px;
     width: 90%;
     margin: 0 auto;
     background-color: #096DB9;
+    margin-bottom: 3px;
 }
 .hero{
     display: grid;
@@ -256,6 +263,9 @@ span{
     padding: 10px;
     font-family: 'Inter', sans-serif;
 }
+.spotlight h2{
+    margin-right: 5px;
+}
 .spotlight h3{
     background-color: #4EA9DB;
     padding: 5px;
@@ -269,11 +279,15 @@ span{
     color: #ECECEC;
     margin: 0;
     border-bottom: 1px solid #ECECEC;
+    font-size: .9rem;
 }
 .spotlight img{
     padding: 10px;
-    width: 90%;
+    width: 50%;
     margin: 0 auto;
+}
+.spotlight section a{
+    padding: 5px;
 }
 footer{
     font-family: 'Inter', sans-serif;

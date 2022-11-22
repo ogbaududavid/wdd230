@@ -48,12 +48,6 @@
         grid-column: 1/3;
         grid-row: 2/3; 
     }
-    .spotlight{
-        grid-column: 1/3;
-        grid-row: 3/4;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
     .join{
         grid-column: 1/3;
         grid-row: 4/5;
@@ -98,5 +92,8 @@
     .footer-text{
         border-top: 1px solid #ECECEC;
         text-align: center;
+    }
+    main h2{
+        margin-bottom: 3px;
     }
 }

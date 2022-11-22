@@ -18,7 +18,7 @@ function displayBusiness(business){
     let p3 = document.createElement("p");
     let a = document.createElement("a");
     let img = document.createElement("img");
-    let section = document.createElement("section")
+    let section = document.createElement("section");
 
     h2.textContent = business.businessName;
     p1.textContent = `Industry: ${business.industry}`;
@@ -29,7 +29,7 @@ function displayBusiness(business){
 
     a.setAttribute("href", business.websiteurl);
     img.setAttribute("src", business.imageurl);
-    img.setAttribute("alt", `${business.businessName} logo`)
+    img.setAttribute("alt", `${business.businessName} logo`);
     img.setAttribute("loading", "lazy");
 
     section.appendChild(h2);
@@ -37,12 +37,9 @@ function displayBusiness(business){
     section.appendChild(p1);
     section.appendChild(p2);
     section.appendChild(p3);
-    section.appendChild(a)
-
-    cards.appendChild(section);
-
+    section.appendChild(a);
+    cards.appendChild(section);   
 }
-
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
