@@ -107,10 +107,9 @@ main img{
     background-color: #096DB9;
 }
 .spotlight{
-    margin-top: 5px;
+    margin: 3px;
     padding: 0px;
-    text-align: center;
-    
+    text-align: center;   
 }
 .spotlight section{
     padding: 12px;
@@ -139,6 +138,8 @@ main img{
     grid-column: 1/4;
     grid-row: 1/7;
     box-shadow: 0 0 5px;
+    display: flex;
+    box-shadow: 0 0 10px black;
 }
 .hero{
     position: relative;
@@ -206,9 +207,22 @@ main img{
     color: red;
     font-size: 1rem;
 }
+.join{
+    text-align: center;
+}
 .join1{
     color: #ECECEC;
     padding: 5px;
+}
+.join1 p{
+    text-align: left;
+}
+.join1 button{
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+.join1 a{
+    color: black;
 }
 .weather1{
     display: grid;

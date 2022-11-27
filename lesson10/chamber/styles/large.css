@@ -1,8 +1,4 @@
 @media only screen and (min-width: 65em){
-    body{
-        width: 90%;
-        margin: 0 auto;
-    }
     .logo h1{
         font-size: 2em;
         margin-top: 0;
@@ -10,7 +6,7 @@
     }
     main{
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1fr 2.5fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
     .event{
@@ -20,11 +16,14 @@
     .event1{
         display: flex;
         flex-direction: column;
-        height: 90%;
+        height: 93%;
     }
     .event1 span{
         border-radius: 10px;
         margin-top: 20px;
+        font-size: 1.2rem;
+        margin: 0px;
+        margin-top: 50px;
     }
     .event1 h3{
         margin: 0;
@@ -62,6 +61,10 @@
     .spotlight{
         grid-column: 3/4;
         grid-row: 1/4;
+    }
+   
+    .spotlight h2{
+        margin: 0px;
     }
     .spotlight section h3{
         margin: 0px;
