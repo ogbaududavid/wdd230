@@ -59,7 +59,7 @@ function getGoldSilverMembers(business){
 }
 
 function createRandomList(){
-    while (i<5){
+    while (i<4){
         let itemValue = orderList[Math.floor(Math.random()*orderList.length)];
         if ( randomList.includes(itemValue) ){
             i = i;
