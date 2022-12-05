@@ -1,0 +1,63 @@
+body{
+    margin:0px;
+}
+.links{
+    display: block;
+    list-style: none;
+    padding: 0px;
+    background-color: black;
+    opacity: 70%;
+    margin: 0px;
+}
+.links li{
+    padding: 10px;
+}
+.links li a{
+    font-size: .8rem;
+    text-decoration: none;
+    color: white;
+}
+.links li:nth-child(1){
+    display: block;
+}
+.responsive li{
+    display: block;
+}
+.socials{
+    padding: 5px;
+    background-color: gold;
+}
+.socials a img{
+    width: 15px;
+    margin: 1px 10px;
+}
+.socials a img:hover{
+    scale: 1.1;
+}
+.hero img{
+    position: absolute;
+    top: 8px;
+    z-index: -1;
+    width: 100%;
+}
+.cards{
+    position: absolute;
+    top: 170px;
+    width: 100%;
+}
+h2{
+    font-size: .8rem;
+    background-color: #62DB6F;
+    width: 200px;
+    color: black;
+    margin: 0 auto;
+    padding: 5px;
+    box-shadow: 0 0 10px black;
+}
+.specials, .weather{
+    background-color: #164A1B;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: white;
+}

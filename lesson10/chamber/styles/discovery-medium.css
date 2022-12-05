@@ -1,7 +1,5 @@
 @media only screen and (min-width: 32.5em){
-    main{
-     padding: 10px;
- }
+
  main img{
      max-width: 600px;
      display: block;

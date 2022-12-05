@@ -22,7 +22,7 @@ function displayResults(weatherData) {
   const windSpeed = weatherData.wind.speed.toFixed(0);
   const currentCondition = weatherData.weather[0].description;
   const weatherIcon = document.getElementById("weather-icon");
-  const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+  const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`;
   const desc = weatherData.weather[0].description;
 
   document.getElementById("temperature").innerHTML = currentTemperature;
