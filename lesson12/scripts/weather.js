@@ -40,9 +40,28 @@ function displayResults(weatherData) {
     document.getElementById("result").innerHTML = windChill;
   }
 }
-
 function getFooter(){
 	let mod= document.lastModified;
-	text = "bountifulfoods.com &copy; 2022 .:|:. David Ogbaudu .:|:. WDD230 .:|:. Last Updated:" + mod;
+	text = "bountifulfoods.com &copy; 2022 .:|:. David Ogbaudu .:|:. WDD230 .:|:. <br>Last Updated:" + mod;
 	document.getElementsByClassName("footer-text")[0].innerHTML = text;
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides(){
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++){
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if(slideIndex > slides.length){slideIndex = 1;}
+  for (i = 0; i < dots.length; i++){
+    dots[i].className = dots[i].className.replace("active","")
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
 }
