@@ -15,6 +15,12 @@ h2{
     padding: 5px;
     box-shadow: 0 0 10px black;
 }
+h1{
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
 p{
     font-size: 1rem;
     padding: 5px;
@@ -66,6 +72,20 @@ nav .socials a img{
 nav .socials a img:hover{
     scale: 1.1;
 }
+.bountiful{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: azure;
+}
+.bountiful img{
+    width: 50px;
+}
+main{
+    background-color: azure;
+}
 main .hero .heroSlide img{
     z-index: -1;
     width: 100%;
@@ -92,7 +112,7 @@ main .hero .radioBtns .dot{
     display: inline-block;
     position: relative;     
 }
-.active{
+main .hero .radioBtns .active{
     background-color: black;
 }
 main .hero .radioBtns{
@@ -102,7 +122,9 @@ main .cards{
     width: 100%;
 }
 main .cards h2{
-    width: 80%;
+    width: 70%;
+    background-color: azure;
+    border-radius: 10px;
 }
 main .cards .specials, .weather{
     background-color: #164A1B;
