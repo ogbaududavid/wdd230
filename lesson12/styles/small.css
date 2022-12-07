@@ -205,7 +205,7 @@ form{
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow:  3px 3px 10px black;
-    background-color: #d8f5da;
+    background-color:#62DB6F;
 }
 fieldset{
     padding: 10px;
@@ -230,7 +230,7 @@ fieldset{
 .pinfo input:valid{
     border-bottom: 3px solid green;
 }
-fieldset .speciald1, .speciald2, .speciald3{
+fieldset #sfruit1, #sfruit2, #sfruit3{
     width: 31%;
     border: 1px solid black;
     border-radius: 3px;
