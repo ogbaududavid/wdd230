@@ -214,6 +214,7 @@ fieldset{
     height: 20px;
     border-radius: 5px;
     box-shadow: 0 0 1px black;
+    border: 1px solid black;
 }
 .pinfo input:required{
     border-bottom: 3px solid red;
@@ -223,12 +224,15 @@ fieldset{
 }
 fieldset .speciald1, .speciald2, .speciald3{
     width: 31%;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 .ainfo textarea{
     width: 95%;
     height: 100px;
     background-color:azure;
     border-radius: 5px;
+    border: 1px solid black;
 }
 .submitBtn{
     width: 100%;
