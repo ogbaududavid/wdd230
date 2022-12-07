@@ -179,8 +179,17 @@ main .cards .weather .weather1 img{
     margin-top: 5px;
     box-shadow: 0 0 10px black;
 }
-footer .footer-text{
+footer{
     background-color: black;
+}
+footer a{
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+footer .footer-text{
     font-size: .8rem;
     text-align: center;
     padding: 5px;
@@ -195,8 +204,8 @@ form{
     padding: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #62DB6F;
     box-shadow:  3px 3px 10px black;
+    background-color: #d8f5da;
 }
 fieldset{
     padding: 10px;
@@ -209,7 +218,6 @@ fieldset{
 }
 .pinfo input{
     padding: 10px;
-    background-color:azure;
     width: 90%;
     height: 20px;
     border-radius: 5px;
@@ -230,7 +238,6 @@ fieldset .speciald1, .speciald2, .speciald3{
 .ainfo textarea{
     width: 95%;
     height: 100px;
-    background-color:azure;
     border-radius: 5px;
     border: 1px solid black;
 }
