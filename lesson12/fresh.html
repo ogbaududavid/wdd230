@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="small.css">
     <script src="scripts/index.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <title>Document</title>
+    <title>Fresh</title>
 </head>
 <body onload="getFooter()">
     <header>
@@ -27,7 +26,43 @@
         </nav>
     </header>
     <main>
-        
+        <h2>Join Our Community</h2>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="pinfo">First name<br><input type="text" name="fname" required></label><br>
+                    <label class="pinfo">Email<br><input type="email" name="email" placeholder="example@gmail.com" required></label><br>
+                    <label class="pinfo">Telephone<br> <input type="tel" name="tel" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Create Specialty Drink</legend>
+                        <select name="speciald1" class="speciald1">
+                            <option value="">Fruits</option>
+                            <option value="mango">Mango</option>
+                            <option value="apple">Apple</option>
+                            <option value="orange">Orange</option>
+                        </select> 
+                        <select name="speciald2" class="speciald2">
+                            <option value="">Fruits</option>
+                            <option value="mango">Mango</option>
+                            <option value="apple">Apple</option>
+                            <option value="orange">Orange</option>
+                        </select> 
+                        <select name="speciald3" class="speciald3">
+                            <option value="">Fruits</option>
+                            <option value="mango">Mango</option>
+                            <option value="apple">Apple</option>
+                            <option value="orange">Orange</option>
+                        </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Instruction</legend>
+                    <label class="ainfo">Anythin you want us to consider?<br><textarea name="description" maxlength="150"></textarea></label>
+                    <label class="ainfo"><input type="hidden" name="load-time" class="load-time"><label>
+                </fieldset>
+                <input type="submit" value="Create my drink" class="submitBtn">
+            </form>
+        </div>
     </main>
     <footer>
         <p class="footer-text"></p>

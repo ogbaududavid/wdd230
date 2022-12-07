@@ -28,6 +28,8 @@ p{
     color: white;
     text-align: justify;
 }
+
+
 header{
     position: sticky;
     top: 0;
@@ -93,11 +95,17 @@ main .hero .heroSlide img{
 main .hero .customizeBtn{
     background-color: #164A1B;
     display: block;
+    padding: 10px;
     margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 5px black;
     position: relative;
-    bottom: 30px;
+    bottom: 50px;
+    border: none;
+}
+main .hero .customizeBtn:hover{
+    background-color: #62DB6F;
+    scale: 1.1;
 }
 main .hero .customizeBtn a{
     color: white;
@@ -176,4 +184,62 @@ footer .footer-text{
     font-size: .8rem;
     text-align: center;
     padding: 5px;
+}
+
+
+
+form{
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #62DB6F;
+    box-shadow:  3px 3px 10px black;
+}
+fieldset{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.pinfo{
+    display: block;
+}
+.pinfo input{
+    padding: 10px;
+    background-color:azure;
+    width: 90%;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px black;
+}
+.pinfo input:required{
+    border-bottom: 3px solid red;
+}
+.pinfo input:valid{
+    border-bottom: 3px solid green;
+}
+fieldset .speciald1, .speciald2, .speciald3{
+    width: 31%;
+}
+.ainfo textarea{
+    width: 95%;
+    height: 100px;
+    background-color:azure;
+    border-radius: 5px;
+}
+.submitBtn{
+    width: 100%;
+    padding: 10px;
+    background-color: #164A1B;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 5px black;
+    color: white;
+    font-size: 1.2rem;
 }
