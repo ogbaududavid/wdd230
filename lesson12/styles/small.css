@@ -1,3 +1,4 @@
+/**Home Page and General**/
 body{
     margin:0px;
 }
@@ -28,7 +29,6 @@ p{
     color: white;
     text-align: justify;
 }
-
 
 header{
     position: sticky;
@@ -187,7 +187,7 @@ footer .footer-text{
 }
 
 
-
+/**Fresh Page**/
 form{
     border-radius: 10px;
     width: 80%;
@@ -246,4 +246,18 @@ fieldset .speciald1, .speciald2, .speciald3{
     box-shadow: 0 3px 5px black;
     color: white;
     font-size: 1.2rem;
+}
+
+
+
+/**About Page**/
+.about{
+    padding: 10px;
+}
+
+.about p{
+    color: black;
+}
+.about h2{
+    border-radius: 5px;
 }
