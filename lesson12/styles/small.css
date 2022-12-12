@@ -6,11 +6,12 @@ h3{
     margin: 3px;
     color: white;
     font-family: 'Poppins', sans-serif;
+    font-size: .8rem;
 }
 
 h2{
     text-align: center;
-    font-size: .8rem;
+    font-size: 1rem;
     background-color: #62DB6F;
     color: black;
     margin: 0 auto;
@@ -94,7 +95,7 @@ main{
     background-color: azure;
 }
 main .hero .heroSlide img{
-    z-index: -1;
+    z-index: 1;
     width: 100%;
 }
 main .hero .customizeBtn{
@@ -175,7 +176,7 @@ main .cards .weather .weather1 img{
 }
 .discovery section{
     padding: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     box-shadow: 0 0 5px black;
     
 }
@@ -186,7 +187,6 @@ main .cards .weather .weather1 img{
 .discovery  section img{
     width: 100%;
     margin-top: 5px;
-    box-shadow: 0 0 10px black;
 }
 footer{
     background-color: black;
@@ -288,6 +288,7 @@ form:hover{
 
 .about p{
     color: black;
+    margin-bottom: 20px;
 }
 .about h2{
     border-radius: 5px;
