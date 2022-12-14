@@ -67,7 +67,7 @@ function tempForecast(day){
   let p1 = document.createElement("p");
   let p2 = document.createElement("p");
   let p3 = document.createElement("p");
-  p1.textContent = "day1} " + <span>&#176;F</span>;
+  p1.textContent = day1;
   p2.textContent = day2;
   p3.textContent = day3;
   weather2.appendChild(p1);
