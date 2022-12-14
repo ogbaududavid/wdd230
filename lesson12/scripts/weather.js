@@ -21,7 +21,6 @@ async function apiFetch(){
     if (response.ok){
       const data = await response.json();
       tempForecast(data);
-      console.log(data)
     }
     else {
       throw Error (await response.text());
