@@ -59,9 +59,23 @@ nav .links li{
 }
 nav .links li:nth-child(1){
     display: block;
+    padding: 10px;
+}
+nav .links li:nth-child(1) a{
+    font-size: 2rem;
+}
+nav .links li:nth-child(1) #close{
+    display: none;
 }
 nav .responsive li{
     display: block;
+}
+nav .responsive li:nth-child(1) #close{
+    display: inline-block;
+    font-weight: bolder;
+}
+nav .responsive li:nth-child(1) a{
+    display: none;
 }
 nav .links li a{
     font-size: .8rem;
@@ -278,8 +292,54 @@ form:hover{
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
 }
-
-
+.showDrink{
+    background-color: azure;
+    border-radius: 5px;
+    box-shadow: 0 0 20px black;
+    padding: 5px;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    right: 50px;
+    max-width: 400px;
+    max-height: 400px;
+    display: none;
+}
+.showDrink h4{
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.showDrink p{
+    color: black; 
+    font-size: 1rem;
+    display: block;
+}
+.showDrink span{
+    display: block;
+    font-size: .8rem;
+    margin: 2px;
+}
+.showDrink section{
+    margin-bottom: 10px;
+}
+.showDrink .fruitDetails{
+    display: flex;
+    flex-direction: row;
+}
+.showDrink #clearBtn{
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;;
+}
 
 /**About Page**/
 .about{

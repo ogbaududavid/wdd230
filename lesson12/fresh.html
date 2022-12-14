@@ -14,11 +14,11 @@
     <header>
         <nav>
             <ul class="links">
-                <li onclick="toggleMenu()"><a href="#">MENU</a></li>
+                <li onclick="toggleMenu()"><a href="#">&#9776;</a> <a id="close">X</a></li>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="fresh.html">FRESH</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="#">CONTACT</a></li> 
+                <li><a href="#">CONTACT</a></li>
             </ul>
             <div class="socials">
                 <a href="facebook.com"><img src="images/facebook.png" alt="facebook logo"></a>
@@ -29,12 +29,12 @@
     </header>
     <main>
         <h2>Join Our Community</h2>
-            <form method="get" action="thankyou.html">
+            <form>
                 <fieldset>
                     <legend>Personal Information</legend>
-                    <label class="pinfo">First name<br><input type="text" name="fname" required></label><br>
-                    <label class="pinfo">Email<br><input type="email" name="email" placeholder="example@gmail.com" required></label><br>
-                    <label class="pinfo">Telephone<br> <input type="tel" name="tel" required></label>
+                    <label class="pinfo">First name<br><input type="text" name="fname" class="fname" required></label><br>
+                    <label class="pinfo">Email<br><input type="email" name="email" class="email"  placeholder="example@gmail.com" required></label><br>
+                    <label class="pinfo">Telephone<br> <input type="tel" name="tel" class="tel" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Create Specialty Drink</legend>
@@ -50,11 +50,14 @@
                 </fieldset>
                 <fieldset>
                     <legend>Additional Instruction</legend>
-                    <label class="ainfo">Anythin you want us to consider?<br><textarea name="description" maxlength="150"></textarea></label>
+                    <label class="ainfo">Special Note<br><textarea name="instruction" class="note" maxlength="150"></textarea></label>
                     <label class="ainfo"><input type="hidden" name="load-time" class="load-time"><label>
                 </fieldset>
-                <input type="submit" value="Create my drink" id="submitBtn">
+                <input type="button" value="Create my drink" id="submitBtn">
             </form>
+        </div>
+        <div class="showDrink">
+            
         </div>
     </main>
     <footer>
