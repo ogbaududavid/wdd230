@@ -102,7 +102,7 @@ function showResult(){
         s5.textContent = `Special Note: ${note}`;
         clearBtn.setAttribute("id", "clearBtn");
         clearBtn.textContent = "Go Back";
-        clearBtn.addEventListener("click", function (){showDrink.remove()})
+        clearBtn.addEventListener("click", function (){window.location.reload();})
 
         section1.appendChild(pinfo)
         section2.setAttribute("class", "fruitDetails")
