@@ -4,6 +4,7 @@ const select2 = document.querySelector("#sfruit2");
 const select3 = document.querySelector("#sfruit3");
 const submitBtn = document.querySelector("#submitBtn");
 const showDrink = document.getElementsByClassName("showDrink")[0];
+let numberOfSpecialDrinks = Number(window.localStorage.getItem("specialDrinks"))
 let fruitTotal;
 var fruits = {};
 
@@ -119,8 +120,11 @@ function showResult(){
         showDrink.appendChild(section3);
 }
 function showMyDrink(){
-    showDrink.style.display="block"
-    let i;
-    alert("you have created " + i + "drinks");
-    window.localStorage.setItem("specialDrinks", i++);
+    showDrink.style.display="block";
+
+    if(isNaN(numberOfSpecialDrinks)){
+        window.localStorage.setItem("specialDrinks", 0);   
+        numberOfSpecialDrinks = window.localStorage.getItem("specialDrinks");
+    }
+    window.localStorage.setItem("specialDrinks", numberOfSpecialDrinks + 1);
 }
