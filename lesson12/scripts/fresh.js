@@ -101,7 +101,7 @@ function showResult(){
         s4.textContent = `Your combined nutritional serving for your special drink is ${grandTotal}g`;
         s5.textContent = `Special Note: ${note}`;
         clearBtn.setAttribute("id", "clearBtn");
-        clearBtn.textContent = "Go Back";
+        clearBtn.textContent = "reload form page";
         clearBtn.addEventListener("click", function (){window.location.reload();})
 
         section1.appendChild(pinfo)
