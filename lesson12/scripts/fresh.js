@@ -29,8 +29,8 @@ function displayFruit(fruit){
     let cal = fruit.nutritions.calories
     let sug = fruit.nutritions.sugar
 
-    fruitTotal = carb + protein + fat + cal + sug
-    fruits[fruitName] = [carb, protein, fat, cal, sug, fruitTotal.toFixed(2)]
+    fruitTotal= (carb + protein + fat + cal + sug).toFixed(2);
+    fruits[fruitName] = [carb, protein, fat, cal, sug, fruitTotal];
 
     option1.setAttribute("value", fruitName.toLowerCase());
     option2.setAttribute("value", fruitName);
@@ -93,7 +93,7 @@ function showResult(){
                 Calcium: ${fruits[fruit3][3]}g, 
                 Sugar: ${fruits[fruit3][4]}g`; }
         }
-        let grandTotal = parseFloat(fruits[fruit1][5]) +  parseFloat(fruits[fruit2][5]) + parseFloat(fruits[fruit3][5]);
+        let grandTotal = (parseFloat(fruits[fruit1][5]) +  parseFloat(fruits[fruit2][5]) + parseFloat(fruits[fruit3][5])).toFixed(2);
 
         h4.textContent = "Order Summary";
         pinfo.textContent = `Name: ${fname}  |  Email: ${email}  |  Tel: ${tel}`;
@@ -120,4 +120,7 @@ function showResult(){
 }
 function showMyDrink(){
     showDrink.style.display="block"
+    let i;
+    alert("you have created " + i + "drinks");
+    window.localStorage.setItem("specialDrinks", i++);
 }
