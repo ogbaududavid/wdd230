@@ -163,6 +163,10 @@ main .cards .specials, .weather{
 main .cards .specials .radioBtns .active{
     background-color: azure;
 }
+.specialsSlide img{
+    z-index: 1;
+    width: 80%;
+}
 main .cards .specials .total{
     font-size: 2rem;
     font-family: 'DM Serif Display', serif;
