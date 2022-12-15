@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <script src="scripts/index.js" defer></script>
     <script src="scripts/weather.js" defer></script>
@@ -14,8 +16,8 @@
 <body onload="getFooter(),showTotalDrinks()">
     <header>
         <nav>
+            <button class="menuBtn" onclick="toggleMenu()">&#9776;</button>
             <ul class="links">
-                <li onclick="toggleMenu()"><a href="#">&#9776;</a> <a id="close">X</a></li>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="fresh.html">FRESH</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
@@ -61,6 +63,28 @@
             <section class="specials">
                 <h2>My Specials</h2>
                 <p>You have created <span class="total"></span> special drinks</p>
+                <div class="hero">
+                    <div class="heroSlide">
+                        <div class="mySlides">
+                            <img src="images/drink1.webp" alt="fruit drink">
+                        </div>
+                        <div class="mySlides">
+                            <img src="images/drink2.webp" alt="fruit drink">
+                        </div>
+                        <div class="mySlides">
+                            <img src="images/drink3.webp" alt="fruit drink">
+                        </div>
+                        <div class="mySlides">
+                            <img src="images/drink4.webp" alt="fruit drink">
+                        </div>
+                        <div class="mySlides">
+                            <img src="images/drink5.webp" alt="fruit drink">
+                        </div>
+                    </div>
+                    <div class="radioBtns">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                </div>
             </section>
             <section class="weather">
                 <h2>Weather Forecast</h2>
@@ -77,46 +101,58 @@
                     </div>
             </section>
         </div>
+        <h2>Discover Carlsbad</h2>
         <div class="discovery">
-            <h2>Discover Carlsbad</h2>
             <section class="encinitas">
-                <img src="images/encinitas.webp" alt="encinitas" loading="lazy">
-                <h3>Encinitas</h3>
-                <p>Another formerly sleepy beach town that screams 'grab your long board', 
-                    Encinitas is now a top dining destination with celebrity chef Brian Malarkey's 
-                    Herb & Sea and Eurobistro-wine bar Valentina. Another noteworthy addition to the 
-                    area is Alila Marea, a luxury resort that recently opened its ocean front rooms 
-                    and suites along with Vaga by acclaimed local Chef Claudette Zepeda and her 
-                    Mexican-Asian signature dishes. The beauty of the property is its location—perched 
-                    on a secluded coastal bluff with outdoor seating areas and firepits, you'll feel like you're 
-                    on your own private beach. When you're not soaking in the view, stroll into town for the 
-                    farmer's market or other coffee shops and cafes.
-                </p>
+                <div>
+                    <img src="images/encinitas.webp" alt="encinitas" loading="lazy">
+                </div>
+                <div>
+                    <h3>Encinitas</h3>
+                    <p>Another formerly sleepy beach town that screams 'grab your long board', 
+                        Encinitas is now a top dining destination with celebrity chef Brian Malarkey's 
+                        Herb & Sea and Eurobistro-wine bar Valentina. Another noteworthy addition to the 
+                        area is Alila Marea, a luxury resort that recently opened its ocean front rooms 
+                        and suites along with Vaga by acclaimed local Chef Claudette Zepeda and her 
+                        Mexican-Asian signature dishes. The beauty of the property is its location—perched 
+                        on a secluded coastal bluff with outdoor seating areas and firepits, you'll feel like you're 
+                        on your own private beach. When you're not soaking in the view, stroll into town for the 
+                        farmer's market or other coffee shops and cafes.
+                    </p>
+                </div>
             </section>
             <section class="ventura">
-                <img src="images/ventura.webp" alt="ventura" loading="lazy">
-                <h3>Ventura</h3>
-                <p>Sandwiched in between Carpinteria and Oxnard, Ventura Harbor Village is a working harbor, 
-                    fishing marina and quaint area with shops, galleries, restaurants and waterfront activities. 
-                    Expect a carousel, stand-up paddle-board and jet skiing with sea lions, a beach cove and surfers, 
-                    plus it's dog friendly. This spot is also where you will find the Channel Islands 
-                    National Park Visitor Center, aka “The American Galapagos,” 
-                    with a viewing tower where you can spot up to 445 species of birds.
-                </p>
+                <div>
+                    <img src="images/ventura.webp" alt="ventura" loading="lazy">
+                </div>
+                <div>
+                    <h3>Ventura</h3>
+                    <p>Sandwiched in between Carpinteria and Oxnard, Ventura Harbor Village is a working harbor, 
+                        fishing marina and quaint area with shops, galleries, restaurants and waterfront activities. 
+                        Expect a carousel, stand-up paddle-board and jet skiing with sea lions, a beach cove and surfers, 
+                        plus it's dog friendly. This spot is also where you will find the Channel Islands 
+                        National Park Visitor Center, aka “The American Galapagos,” 
+                        with a viewing tower where you can spot up to 445 species of birds.
+                    </p>
+                </div>
             </section>
             <section class="long-beach">
-                <img src="images/long-beach.webp" alt="long beach" loading="lazy">
-                <h3>Long Beach</h3>
-                <p>It's no small town, and it's located just 20 miles from downtown L.A., 
-                    but the allure of Long Beach escapes most Angelenos anyway. (Excepting Lana Del Rey, 
-                    who highlights the place in songs and videos featuring her love of Cali.) So listen up: There's 
-                    a case to be made for Long Beach as your new beachy getaway, with its ethnic diversity, 
-                    great food and walkable downtown area. Stay at the jazzy yet affordable Hotel Maya and 
-                    be sure to visit the docked QE II or the reopened Aquarium of the Pacific. In the 
-                    well-healed Belmont Shores section along Pacific Coast Highway, L.A. 
-                    nightlife guru Brent Bolthouse and Michelin-starred chef Michael 
-                    Mina have opened a stunning Bungalow Kitchen outpost designed by Studio Collective.
-                </p>
+                <div>
+                    <img src="images/long-beach.webp" alt="long beach" loading="lazy">
+                </div>
+                <div>
+                    <h3>Long Beach</h3>
+                    <p>It's no small town, and it's located just 20 miles from downtown L.A., 
+                        but the allure of Long Beach escapes most Angelenos anyway. (Excepting Lana Del Rey, 
+                        who highlights the place in songs and videos featuring her love of Cali.) So listen up: There's 
+                        a case to be made for Long Beach as your new beachy getaway, with its ethnic diversity, 
+                        great food and walkable downtown area. Stay at the jazzy yet affordable Hotel Maya and 
+                        be sure to visit the docked QE II or the reopened Aquarium of the Pacific. In the 
+                        well-healed Belmont Shores section along Pacific Coast Highway, L.A. 
+                        nightlife guru Brent Bolthouse and Michelin-starred chef Michael 
+                        Mina have opened a stunning Bungalow Kitchen outpost designed by Studio Collective.
+                    </p>
+                </div>
             </section>
         </div>
     </main>

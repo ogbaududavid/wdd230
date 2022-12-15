@@ -1,6 +1,7 @@
 /**Home Page and General**/
 body{
     margin:0px;
+    background-color: azure;
 }
 h3{
     margin: 3px;
@@ -39,6 +40,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: black;
 }
 nav{
     margin: 0px;
@@ -54,34 +56,32 @@ nav .links{
     margin: 0px;
 }
 nav .links li{
-    padding: 10px;
     display: none;
 }
-nav .links li:nth-child(1){
+.menuBtn{
+    font-size: 1.5rem;
     display: block;
-    padding: 10px;
-}
-nav .links li:nth-child(1) a{
-    font-size: 2rem;
-}
-nav .links li:nth-child(1) #close{
-    display: none;
+    margin: 5px;
+    margin-top: 0;
+    color: white;
+    border: none;
+    background-color: black;
 }
 nav .responsive li{
     display: block;
 }
-nav .responsive li:nth-child(1) #close{
-    display: inline-block;
-    font-weight: bolder;
-}
-nav .responsive li:nth-child(1) a{
-    display: none;
+nav .responsive li a{
+    display: block;
+    padding: 10px;
 }
 nav .links li a{
     font-size: .8rem;
     text-decoration: none;
     color: white;
     font-family: 'Poppins', sans-serif;
+}
+nav .links li:hover{
+    background-color: #62DB6F;
 }
 nav .socials{
     padding: 5px;
@@ -104,9 +104,6 @@ nav .socials a img:hover{
 }
 .bountiful img{
     width: 50px;
-}
-main{
-    background-color: azure;
 }
 main .hero .heroSlide img{
     z-index: 1;
@@ -162,10 +159,9 @@ main .cards .specials, .weather{
     margin-bottom: 5px;
     text-align: center;
     color: white;
-    height: 200px;
 }
-main .cards .weather{
-    height: 100%;
+main .cards .specials .radioBtns .active{
+    background-color: azure;
 }
 main .cards .specials .total{
     font-size: 2rem;
@@ -181,7 +177,7 @@ main .cards .weather .weather1{
     margin: 0px;
     padding: 0px;
     align-items: center;
-    border-bottom: 5px solid azure;
+    border-bottom: 2px solid azure;
 }
 main .cards .weather .weather1 h3, span{
     margin: 0;
@@ -233,17 +229,16 @@ footer .footer-text{
     font-size: .8rem;
     text-align: center;
     padding: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 /**Fresh Page**/
 form{
     border-radius: 10px;
-    width: 80%;
     margin: 0 auto;
     padding: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 10px;
     box-shadow:  3px 3px 10px black;
     background-color:#62DB6F;
     
@@ -324,6 +319,7 @@ form:hover{
     right: 2%;
     width: 350px;
     display: none;
+    margin: 0 auto;
 }
 .showDrink h4{
     background-color: green;
@@ -372,4 +368,5 @@ form:hover{
 }
 .about h2{
     border-radius: 5px;
+    background-color: none;
 }

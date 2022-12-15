@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/small.css">
+    <link rel="stylesheet" type="text/css" href="styles/medium.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     <script src="scripts/index.js" defer></script>
     <script src="scripts/fresh.js" defer></script>
@@ -13,13 +15,17 @@
 <body onload="getFooter()">
     <header>
         <nav>
+            <button class="menuBtn" onclick="toggleMenu()">&#9776;</button>
             <ul class="links">
-                <li onclick="toggleMenu()"><a href="#">&#9776;</a> <a id="close">X</a></li>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="fresh.html">FRESH</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
+            <div class="bountiful">
+                <img src="images/logo.png" alt="logo">
+                <h1>BOUNTIFUL FOODS</h1>
+            </div>
             <div class="socials">
                 <a href="facebook.com"><img src="images/facebook.png" alt="facebook logo"></a>
                 <a href="twitter.com"><img src="images/twitter.png" alt="twitter logo"></a>
@@ -28,7 +34,7 @@
         </nav>
     </header>
     <main>
-        <h2>Join Our Community</h2>
+        <h2>Create Your Special Drink</h2>
             <form>
                 <fieldset>
                     <legend>Personal Information</legend>
@@ -52,9 +58,8 @@
                     <legend>Additional Instruction</legend>
                     <label class="ainfo">Special Note<br><textarea name="instruction" class="note" maxlength="150" placeholder="Kindly enter any additional information here."></textarea></label>
                 </fieldset>
-                <input type="button" value="Create my drink" id="submitBtn">
+                <input type="button" value="Create My Drink" id="submitBtn">
             </form>
-        </div>
         <div class="showDrink">     
         </div>
     </main>

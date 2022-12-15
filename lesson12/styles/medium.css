@@ -1,0 +1,84 @@
+@media only screen and (min-width: 32.5em){
+   .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin-bottom: 20px;
+    }
+    nav .links{
+        display: flex;
+        border-top: 10px solid white;
+    }
+    nav .links li{
+        flex: 1 1 100%;
+        display: block;
+        padding: 10px;
+    }
+    nav .links li a{
+        text-align: center;
+        font-size: 1rem;
+        display: block;
+    }
+    nav .links li:hover{
+        background-color: #62DB6F;
+    }
+    .menuBtn{
+        display: none;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .cards span{
+        font-size: .8rem;
+    }
+    .cards p{
+        font-size: 1rem;
+    }
+    .cards h3{
+        font-size: .7rem;
+    }
+    .cards h4{
+        font-size: 1rem;
+    }
+
+
+
+    /**Fresh Page**/
+    form{
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        box-shadow:  3px 3px 10px black;
+        background-color:#62DB6F;
+        
+    }
+    .showDrink span{
+        display: block;
+        font-size: 1rem;
+        padding: 3px;
+    }
+
+
+
+
+        /**About Page**/
+    .about{
+        padding: 10px;
+    }
+
+    .about p{
+        color: black;
+        margin-bottom: 20px;
+    }
+    .about h2{
+        border-radius: 5px;
+    }
+}

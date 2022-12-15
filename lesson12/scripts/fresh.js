@@ -49,6 +49,8 @@ function displayFruit(fruit){
 
 submitBtn.addEventListener("click", showResult);
 submitBtn.addEventListener("click", showMyDrink);
+submitBtn.addEventListener("click", showDrink.remove);
+
 function showResult(){
         let pinfo = document.createElement("span");
         let s1 = document.createElement("span");
@@ -101,7 +103,7 @@ function showResult(){
         s4.textContent = `Your combined nutritional serving for your special drink is ${grandTotal}g`;
         s5.textContent = `Special Note: ${note}`;
         clearBtn.setAttribute("id", "clearBtn");
-        clearBtn.textContent = "reload form page";
+        clearBtn.textContent = "Reload Form Page";
         clearBtn.addEventListener("click", function (){window.location.reload();})
 
         section1.appendChild(pinfo)
