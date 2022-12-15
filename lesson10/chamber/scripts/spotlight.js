@@ -1,5 +1,3 @@
-
-
 const requestURL = "json/data.json";
 const spotlight = document.querySelector(".spotlight");
 let orderList = [];
@@ -12,7 +10,6 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject){
-        console.table(jsonObject);
         const businesses = jsonObject["businesses"];
         businesses.forEach(getGoldSilverMembers);
         createRandomList();
@@ -70,5 +67,3 @@ function createRandomList(){
         } 
     }
 }
-console.log(orderList);
-console.log(randomList);
