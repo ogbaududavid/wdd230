@@ -11,6 +11,7 @@
     <script src="scripts/index.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/slides.js" defer></script>
+    <script src="scripts/indexOrder.js" defer></script>
     <title>bountifulfoods.com</title>
 </head>
 <body onload="getFooter(),showTotalDrinks()">
@@ -65,7 +66,7 @@
             <section class="specials">
                 <h2>My Specials</h2>
                 <p>You have created <span class="total"></span> special drinks</p>
-                <div class="hero">
+                <div class="specialDiv">
                     <div class="specialsSlide">
                         <div class="mySlides2">
                             <img src="images/drink1.webp" alt="fruit drink">
@@ -83,8 +84,20 @@
                             <img src="images/drink5.webp" alt="fruit drink">
                         </div>
                     </div>
-                    <div class="radioBtns">
-                        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <div class="order">
+                        <h2>Ready To Drink</h2>
+                        <div class="select">
+                            <label>Apple Juice<input type="checkbox" name="apple" class="check" value="Apple"></label>
+                            <label>Orange Juice<input type="checkbox" name="apple" class="check" value="Orange"></label>
+                            <label>Lemon Juice<input type="checkbox" name="lemon" class="check" value="Lemon"></label>  
+                            <label>Blackberry Juice<input type="checkbox" name="blackberry" class="check" value="Blackberry"></label>
+                            <label>Mango Juice<input type="checkbox" name="mango" class="check" value="Mango"></label>
+                            <label>Grape Juice<input type="checkbox" name="grape" class="check" value="Grape"></label>   
+                        </div>
+                        <div>
+                            <button class="orderBtn">Place an Order</button>
+                            <div class="output"></div>
+                        </div>  
                     </div>
                 </div>
             </section>

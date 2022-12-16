@@ -158,6 +158,10 @@ main .hero .radioBtns{
 main .cards{
     width: 100%;
 }
+.specialDiv{
+    display: flex;
+    flex-direction: column;
+}
 main .cards h2{
     width: 70%;
     background-color: azure;
@@ -174,9 +178,39 @@ main .cards .specials, .weather{
 main .cards .specials .radioBtns .active{
     background-color: azure;
 }
+main .cards .specials .specialDiv .order h2{
+    margin-bottom: 10px;
+}
+main .cards .specials .specialDiv .order .select{
+    padding: 5px;
+}
+main .cards .specials .specialDiv .order .orderBtn{
+    padding: 5px;
+    background-color: #62DB6F;
+    color: black;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    border: none;
+}
+main .cards .specials .specialDiv .order .output{
+    display: none;
+    position: relative;
+    border-bottom: 200px;
+    background-color: #62DB6F;
+    margin: 10px;
+}
+main .cards .specials .specialDiv .order .output p{
+    padding: 0;
+    color: black;
+    font-size: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
 .specialsSlide img{
     z-index: 1;
-    width: 80%;
+    width: 50%;
+    margin-bottom: 10px;
 }
 main .cards .specials .total{
     font-size: 2rem;

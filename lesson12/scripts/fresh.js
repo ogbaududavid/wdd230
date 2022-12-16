@@ -125,7 +125,7 @@ function showResult(){
             showDrink.appendChild(section3);
 
             showMyDrink();
-            showDrink.remove;
+            submitBtn.remove();
     }
     else{
         alert("Enter the required field")
