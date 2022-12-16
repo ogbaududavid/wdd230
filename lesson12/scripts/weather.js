@@ -1,6 +1,6 @@
 //const weatherUrl =  "https://api.openweathermap.org/data/2.5/weather?id=5334223&appid=b6f2d588b3f237931066c85d53d0e44c&units=imperial"
-const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=b6f2d588b3f237931066c85d53d0e44c"
-const weatherUrl2 = "https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=b6f2d588b3f237931066c85d53d0e44c"
+const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=b6f2d588b3f237931066c85d53d0e44c&units=imperial"
+const weatherUrl2 = "https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=b6f2d588b3f237931066c85d53d0e44c&units=imperial"
 async function apiFetch(){
   try{
     const response = await fetch(weatherUrl);
