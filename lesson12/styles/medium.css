@@ -7,7 +7,7 @@
     }
     nav .links{
         display: flex;
-        border-top: 10px solid white;
+        margin: 0 20%;
     }
     nav .links li{
         flex: 1 1 100%;
@@ -24,6 +24,24 @@
     }
     .menuBtn{
         display: none;
+    }
+    .bountifulGrid{
+        display: flex;
+        flex-direction: row;
+        background-color: azure;
+        justify-content: center;
+        align-items: center;
+    }
+    .bountifulGrid span{
+        display: flex;
+        flex-direction: row;
+        background-color: azure;
+        font-size: .8rem;
+
+    }
+    nav .socials a img{
+        width: 30px;
+        margin: 5px;
     }
     p{
         font-size: 1.1rem;

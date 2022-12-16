@@ -4,7 +4,7 @@ function toggleMenu(){
 
 function getFooter(){
 	let mod= document.lastModified;
-	document.getElementsByClassName("footer-text")[0].innerHTML = "bountifulfoods.com &copy; 2022 .:|:. David Ogbaudu .:|:. WDD230 .:|:. Last Updated:" + mod +"<br> Km. 23, Carlsbald, USA.:|:. +1 00000220.:|:info@bountifulfoods.com";
+	document.getElementsByClassName("footer-text")[0].innerHTML = "bountifulfoods.com &copy; 2022 .:|:. David Ogbaudu .:|:. WDD230 .:|:. Last Updated:" + mod +"<br> Km. 23, Carlsbald, Carlifornia, USA.:|:. +1 00000220.:|:info@bountifulfoods.com";
 }
 
 function showTotalDrinks(){

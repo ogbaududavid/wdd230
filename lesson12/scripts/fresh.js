@@ -58,14 +58,17 @@ function showResult(){
         let s3 = document.createElement("span");
         let s4 = document.createElement("span");
         let s5 = document.createElement("span");
+        let s6 = document.createElement("span");
         let h4 = document.createElement("h4");
         let section1 = document.createElement("section");
         let section2 = document.createElement("section");
         let section3 = document.createElement("section");
         let clearBtn = document.createElement("button");
+
         let fruit1 = select1.options[select1.selectedIndex].text;
         let fruit2 = select2.options[select2.selectedIndex].text;
         let fruit3 = select3.options[select3.selectedIndex].text;
+
         const fname = document.getElementsByClassName("fname")[0].value;
         const email = document.getElementsByClassName("email")[0].value;
         const tel = document.getElementsByClassName("tel")[0].value;
@@ -99,6 +102,7 @@ function showResult(){
         let grandTotal = (parseFloat(fruits[fruit1][5]) +  parseFloat(fruits[fruit2][5]) + parseFloat(fruits[fruit3][5])).toFixed(2);
 
         h4.textContent = "Order Summary";
+        s6.textContent = "Order Date:" + new Date();
         pinfo.textContent = `Name: ${fname}  |  Email: ${email}  |  Tel: ${tel}`;
         s4.textContent = `Your combined nutritional serving for your special drink is ${grandTotal}g`;
         s5.textContent = `Special Note: ${note}`;
@@ -106,14 +110,15 @@ function showResult(){
         clearBtn.textContent = "Reload Form Page";
         clearBtn.addEventListener("click", function (){window.location.reload();})
 
-        section1.appendChild(pinfo)
-        section2.setAttribute("class", "fruitDetails")
-        section2.appendChild(s1)
-        section2.appendChild(s2)
-        section2.appendChild(s3)
-        section3.appendChild(s4)
-        section3.appendChild(s5)
-        section3.appendChild(clearBtn)
+        section1.appendChild(pinfo);
+        section1.appendChild(s6);
+        section2.setAttribute("class", "fruitDetails");
+        section2.appendChild(s1);
+        section2.appendChild(s2);
+        section2.appendChild(s3);
+        section3.appendChild(s4);
+        section3.appendChild(s5);
+        section3.appendChild(clearBtn);
 
 
         showDrink.appendChild(h4);

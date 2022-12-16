@@ -13,12 +13,12 @@ h3{
 h2{
     text-align: center;
     font-size: 1rem;
-    background-color: #62DB6F;
     color: black;
     margin: 0 auto;
     padding: 5px;
     box-shadow: 0 0 10px black;
     font-family: 'DM Serif Display', serif;
+    background-color: #62DB6F;
 }
 h1{
     font-size: 1rem;
@@ -89,21 +89,32 @@ nav .socials{
 }
 nav .socials a img{
     width: 20px;
-    margin: 1px 5px;
+    margin: 1px;
 }
 nav .socials a img:hover{
     scale: 1.1;
+}
+.bountifulGrid{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
 }
 .bountiful{
     display: flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    padding: 10px;
-    background-color: azure;
+    padding: 2 10px;
 }
 .bountiful img{
     width: 50px;
+}
+.bountifulGrid span{
+    font-size: .6rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
 }
 main .hero .heroSlide img{
     z-index: 1;
@@ -373,4 +384,11 @@ form:hover{
 .about h2{
     border-radius: 5px;
     background-color: none;
+}
+.contact p{
+    color: black;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+
 }
