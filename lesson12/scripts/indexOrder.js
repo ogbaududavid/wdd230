@@ -35,7 +35,7 @@ function showOrder2(){
 			let order = checkboxes[i].value;
 			if(order in fruits){
 				let p = document.createElement("p");
-				p.textContent = (" " +order + " drink has " + fruits[order][0] + "g of combined nutrients.");
+				p.textContent = (" " +order + " juice has " + fruits[order][0] + "g of combined nutrients.");
 				output.appendChild(p);
 			}
 		}
