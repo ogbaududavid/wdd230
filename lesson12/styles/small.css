@@ -228,8 +228,19 @@ main .cards .weather .weather1{
     align-items: center;
     border-bottom: 2px solid azure;
 }
+main .cards .weather .weather1 div #temperature{
+    font-size: 2.5rem;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 100;
+}
 main .cards .weather .weather1 h3, span{
     margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+main .cards .weather .weather1 div span{
+    margin: 0;
+    font-size: 1.2rem;
 }
 main .cards .weather .weather1 img{
     margin: 0;
@@ -337,11 +348,6 @@ fieldset #sfruit1, #sfruit2, #sfruit3{
     background-color: azure;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-}
-form:hover{
-    position: relative;
-    top: -5px;
-    left: -5px;
 }
 #submitBtn{
     width: 100%;
