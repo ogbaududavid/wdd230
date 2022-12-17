@@ -5,6 +5,7 @@ const output = document.getElementsByClassName("output")[0];
 orderBtn.addEventListener("click", showOrder2);
 let fruitTotal1;
 var fruits = {};
+const selectGroup = document.getElementsByClassName("select")[0];
 
 fetch(requestURL3)
     .then(function (response) {
@@ -41,5 +42,6 @@ function showOrder2(){
 		}
 	}
 	output.style.display="block";
-	orderBtn.remove()
+	orderBtn.remove();
+	selectGroup.remove();
 }

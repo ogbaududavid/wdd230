@@ -78,9 +78,18 @@
         background-color:#62DB6F;
         
     }
+    .showDrink{
+        position: absolute;
+        top: 200px;
+        left: 2%;
+        right: 2%;
+        width: 450px;
+        display: none;
+        margin: 0 auto;
+    }
     .showDrink span{
         display: block;
-        font-size: 1rem;
+        font-size: .8rem;
         padding: 3px;
     }
 
